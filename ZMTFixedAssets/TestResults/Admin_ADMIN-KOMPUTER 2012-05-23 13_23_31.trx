@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="e48a47f1-8fc6-4af1-9b04-ec218a7e7eed" name="Admin@ADMIN-KOMPUTER 2012-05-23 13:23:31" runUser="Admin-Komputer\Admin" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="1dc8fbb8-15f3-49ac-a2c5-a77e39de2a4f">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Admin_ADMIN-KOMPUTER 2012-05-23 13_23_31">
+      <DeploymentItem filename="C:\Users\Admin\documents\visual studio 2010\Projects\EF_ZMTdbConnection\EF_ZMTdbContent\bin\Debug\EF_ZMTdbContent.dll" />
+      <DeploymentItem filename="D:\c#\Moq.dll" />
+      <DeploymentItem filename="C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssets\ZMTFixedAssets\bin\Debug\FixedAssets.dll" />
+      <DeploymentItem filename="C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssets\ZMTFixedAssets\bin\Debug\ZMTFixedAssets.dll" />
+      <DeploymentItem filename="C:\Users\Admin\documents\visual studio 2010\Projects\EF_ZMTdbConnection\EF_ZMTdbEntities\bin\Debug\EF_ZMTdbEntities.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-05-23T13:23:31.9365593+02:00" queuing="2012-05-23T13:23:32.0925596+02:00" start="2012-05-23T13:23:32.1549597+02:00" finish="2012-05-23T13:23:33.3405618+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="GetLicencesByCreatorOrLastModifiedPersonID" storage="c:\users\admin\documents\visual studio 2010\projects\zmtfixedassets\zmtfixedassetstestproject\bin\debug\zmtfixedassetstestproject.dll" id="c720e899-12cc-0f8f-74ea-462bf230461c">
+      <Execution id="d6eaad40-a665-4c94-9157-39b82d9b9850" />
+      <TestMethod codeBase="C:/Users/Admin/documents/visual studio 2010/Projects/ZMTFixedAssets/ZMTFixedAssetsTestProject/bin/Debug/ZMTFixedAssetsTestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ZMTFixedAssetsTestProject.LicenceTest, ZMTFixedAssetsTestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetLicencesByCreatorOrLastModifiedPersonID" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="c720e899-12cc-0f8f-74ea-462bf230461c" executionId="d6eaad40-a665-4c94-9157-39b82d9b9850" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="d6eaad40-a665-4c94-9157-39b82d9b9850" testId="c720e899-12cc-0f8f-74ea-462bf230461c" testName="GetLicencesByCreatorOrLastModifiedPersonID" computerName="ADMIN-KOMPUTER" duration="00:00:00.5011214" startTime="2012-05-23T13:23:32.1861598+02:00" endTime="2012-05-23T13:23:33.3093617+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d6eaad40-a665-4c94-9157-39b82d9b9850">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;dddd&gt;. Actual:&lt;cccc&gt;. </Message>
+          <StackTrace>   at ZMTFixedAssetsTestProject.LicenceTest.GetLicencesByCreatorOrLastModifiedPersonID() in C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssets\ZMTFixedAssetsTestProject\LicenceTest.cs:line 123
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="FixedAssetsApp.Views.LicenceView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d">
+      <StackPanel>
+        <WrapPanel>
+            <Button Name="btn_GetAllLicences" Click="btn_GetAllLicences_Click" Width="200">Wyświetl wszystkie licencję</Button>
+            <Button Name="btn_AddLicence" Click="btn_AddLicence_Click" Width="200">Dodaj nową licencję</Button>
+        </WrapPanel>
+        <DataGrid Name="dataGridLicences" AutoGenerateColumns="False" AlternatingRowBackground="Gainsboro" 
+                  VerticalAlignment="Top" AlternationCount="2" MaxHeight="500" Width="Auto" CanUserAddRows="False"
+                  IsReadOnly="false" CommandManager.PreviewExecuted="dataGridLicences_PreviewExecuted">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="Auto" IsReadOnly="True" Header="ID" Binding="{Binding id_number, Mode=TwoWay}"></DataGridTextColumn>
+                <DataGridTextColumn Width="Auto" IsReadOnly="True" Header="Numer inwentarzowy" Binding="{Binding inventory_number, Mode=TwoWay}" ></DataGridTextColumn>
+                <DataGridTextColumn Width="Auto" IsReadOnly="True" Header="Przypisany środek trwały" Binding="{Binding assign_fixed_asset, Mode=TwoWay}" ></DataGridTextColumn>
+                <DataGridTextColumn Width="Auto" IsReadOnly="True" Header="Numer licencji" Binding="{Binding licence_number, Mode=TwoWay}" ></DataGridTextColumn>
+                <DataGridTextColumn Width="*" IsReadOnly="True" Header="Name" Binding="{Binding name, Mode=TwoWay}" ></DataGridTextColumn>
+                <DataGridTextColumn Width="Auto" IsReadOnly="True" Header="Utworzone przez" Binding="{Binding created_by, Mode=TwoWay}" ></DataGridTextColumn>
+                <DataGridTextColumn Width="Auto" IsReadOnly="True" Header="Ostatnia modyfikacja" Binding="{Binding last_modified_date, StringFormat=d, Mode=TwoWay}" ></DataGridTextColumn>
+                <DataGridTextColumn Width="Auto" IsReadOnly="True" Header="Ostatnio modyfikowane przez" Binding="{Binding last_modified_login, Mode=TwoWay}" ></DataGridTextColumn>
+                <DataGridTextColumn Width="Auto" IsReadOnly="True" Header="Komentarz" Binding="{Binding comment, Mode=TwoWay}" ></DataGridTextColumn>
+                <DataGridTemplateColumn Width="Auto" Header="Usuń">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Command="Delete"
+                                    Content="Usuń" Name="btnDelete"></Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Width="Auto" Header="Edytuj">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Edytuj" Name="btnUpdate" Click="btnUpdate_Click"></Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </StackPanel>
+</UserControl>

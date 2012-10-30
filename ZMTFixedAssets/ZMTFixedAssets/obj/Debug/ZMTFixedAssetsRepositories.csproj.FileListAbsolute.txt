@@ -1,0 +1,14 @@
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssets\ZMTFixedAssets\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssets\ZMTFixedAssets\obj\Debug\ZMTFixedAssets.dll
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssets\ZMTFixedAssets\obj\Debug\ZMTFixedAssets.pdb
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssets\ZMTFixedAssets\bin\Debug\ZMTFixedAssets.dll.config
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssets\ZMTFixedAssets\bin\Debug\ZMTFixedAssets.dll
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssets\ZMTFixedAssets\bin\Debug\ZMTFixedAssets.pdb
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssets\ZMTFixedAssets\bin\Debug\EF_ZMTdbContent.dll
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssets\ZMTFixedAssets\bin\Debug\EF_ZMTdbEntities.dll
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssets\ZMTFixedAssets\bin\Debug\EF_ZMT_DbContext.dll
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssets\ZMTFixedAssets\bin\Debug\FixedAssets.dll
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssets\ZMTFixedAssets\bin\Debug\EF_ZMT_DbContext.pdb
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssets\ZMTFixedAssets\bin\Debug\EF_ZMTdbContent.pdb
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssets\ZMTFixedAssets\bin\Debug\EF_ZMTdbEntities.pdb
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssets\ZMTFixedAssets\bin\Debug\FixedAssets.pdb

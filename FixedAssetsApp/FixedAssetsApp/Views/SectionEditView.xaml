@@ -1,0 +1,201 @@
+﻿<Window x:Class="FixedAssetsApp.Views.SectionEditView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:validators="clr-namespace:FixedAssetsApp.Validation" KeyDown="Window_KeyDown"
+        xmlns:collectionVisiblity="clr-namespace:FixedAssetsApp.Converters" WindowStartupLocation="CenterScreen"
+        Title="Sekcja" MinHeight="750" MinWidth="600" Height="750" Width="600">
+    <Window.Resources>
+        <collectionVisiblity:ErrorCollectionToVisibilityConverter x:Key="ToVisibility" />
+        <Style TargetType="TextBlock">
+            <Setter Property="Foreground" Value="Red" />
+        </Style>
+    </Window.Resources>
+    <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.Close" 
+                        Executed="CloseCommandHandler"/>
+    </Window.CommandBindings>
+    <ScrollViewer>
+        <StackPanel Margin="10,4,0,0">
+            <Label Name="Label_AddOrEditSection" FontFamily="Arial" FontSize="22" FontStyle="Italic" HorizontalAlignment="Center"></Label>
+            
+            <Label>Nazwa:</Label>
+                <TextBox Name="tbAddSection_Name" HorizontalAlignment="Stretch" Margin="0 0 15 10">
+                    <Binding Path="name" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                        <Binding.ValidationRules>
+                            <validators:StringRangeValidationRule ValidatesOnTargetUpdated="True"
+                                        MinimumLength="1" MaximumLength="255" Empty="False"
+                                        ErrorMessage="Pole nazwa nie może być puste. Maksymalna długość 255 znaków" />
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox>
+
+            <Label>Skrócona nazwa:</Label>
+                <TextBox Name="tbAddSection_ShortName" Margin="0 0 15 10">
+                    <Binding Path="short_name" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                        <Binding.ValidationRules>
+                            <validators:StringRangeValidationRule ValidatesOnTargetUpdated="True"
+                                        MinimumLength="2" MaximumLength="10" Empty="False"
+                                        ErrorMessage="Pole skrócona nazwa powinno zawierać od 2 do 10 znaków" />
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox>
+            <Label>Adres:</Label>
+                <TextBox Name="tbAddSection_Street" Margin="0 0 15 10">
+                    <Binding Path="street" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                        <Binding.ValidationRules>
+                            <validators:StringRangeValidationRule ValidatesOnTargetUpdated="True"
+                                        MinimumLength="2" MaximumLength="100"
+                                        ErrorMessage="Pole adres powinno zawierać od 2 do 100 znaków" />
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox>
+            <Label>Kod pocztowy:</Label>
+                <TextBox Name="tbAddSection_PostalCode" Margin="0 0 15 10">
+                    <Binding Path="postal_code" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                        <Binding.ValidationRules>
+                            <validators:StringRangeValidationRule ValidatesOnTargetUpdated="True"
+                                        MinimumLength="2" MaximumLength="10" Empty="False"
+                                        ErrorMessage="Pole kod pocztowy powinno zawierać od 2 do 100 znaków" />
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox>
+
+            <Label>Poczta:</Label>
+                <TextBox Name="tbAddSection_Post" Margin="0 0 15 10">
+                    <Binding Path="post" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                        <Binding.ValidationRules>
+                            <validators:StringRangeValidationRule ValidatesOnTargetUpdated="True"
+                                        MinimumLength="2" MaximumLength="100" Empty="False"
+                                        ErrorMessage="Pole poczta powinno zawierać od 2 do 100 znaków" />
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox>
+
+            <Label>Miejscowość:</Label>
+                <TextBox Name="tbAddSection_Locality" Margin="0 0 15 10">
+                    <Binding Path="locality" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                        <Binding.ValidationRules>
+                            <validators:StringRangeValidationRule ValidatesOnTargetUpdated="True"
+                                        MinimumLength="2" MaximumLength="100" Empty="False"
+                                        ErrorMessage="Pole miejscowość powinno zawierać od 2 do 100 znaków" />
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox>
+
+            <Label>Telefon:</Label>
+                <TextBox Name="tbAddSection_Phone" Margin="0 0 15 10">
+                    <Binding Path="phone_number" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                        <Binding.ValidationRules>
+                            <validators:IntegerLengthValidationRule ValidatesOnTargetUpdated="True"
+                                        Minimum="9" Maximum="9" Empty="False"  
+                                        ErrorMessage="Pole telefon powinno zawierać 9 znaków"/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox>
+            
+            <Label>Email:</Label>
+                <TextBox Name="tbAddSection_Email" Margin="0 0 15 10">
+                    <Binding Path="email" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                        <Binding.ValidationRules>
+                        <validators:RegexValidationRule ValidatesOnTargetUpdated="True" Empty="False" TypeRegax="email"
+                                        ErrorMessage="Podany adres email ma nieprawidłowy format." />
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox>
+
+            <StackPanel>
+                <TextBlock Visibility="{Binding ElementName=tbAddSection_Name, Path=(Validation.Errors), Converter={StaticResource ToVisibility}}">
+                <TextBlock.Text>
+                    <MultiBinding StringFormat=" {0}">
+                        <Binding ElementName="tbAddSection_Name" Path="(Validation.Errors)[0].ErrorContent"/>
+                    </MultiBinding>
+                </TextBlock.Text>
+                </TextBlock>
+
+                <TextBlock Visibility="{Binding ElementName=tbAddSection_ShortName, Path=(Validation.Errors), Converter={StaticResource ToVisibility}}">
+                <TextBlock.Text>
+                    <MultiBinding StringFormat=" {0}">
+                        <Binding ElementName="tbAddSection_ShortName" Path="(Validation.Errors)[0].ErrorContent"/>
+                    </MultiBinding>
+                </TextBlock.Text>
+                </TextBlock>
+
+                <TextBlock Visibility="{Binding ElementName=tbAddSection_Street, Path=(Validation.Errors), Converter={StaticResource ToVisibility}}">
+                <TextBlock.Text>
+                    <MultiBinding StringFormat=" {0}">
+                        <Binding ElementName="tbAddSection_Street" Path="(Validation.Errors)[0].ErrorContent"/>
+                    </MultiBinding>
+                </TextBlock.Text>
+                </TextBlock>
+
+                <TextBlock Visibility="{Binding ElementName=tbAddSection_PostalCode, Path=(Validation.Errors), Converter={StaticResource ToVisibility}}">
+                <TextBlock.Text>
+                    <MultiBinding StringFormat=" {0}">
+                        <Binding ElementName="tbAddSection_PostalCode" Path="(Validation.Errors)[0].ErrorContent"/>
+                    </MultiBinding>
+                </TextBlock.Text>
+                </TextBlock>
+
+                <TextBlock Visibility="{Binding ElementName=tbAddSection_Post, Path=(Validation.Errors), Converter={StaticResource ToVisibility}}">
+                <TextBlock.Text>
+                    <MultiBinding StringFormat=" {0}">
+                        <Binding ElementName="tbAddSection_Post" Path="(Validation.Errors)[0].ErrorContent"/>
+                    </MultiBinding>
+                </TextBlock.Text>
+                </TextBlock>
+
+                <TextBlock Visibility="{Binding ElementName=tbAddSection_Locality, Path=(Validation.Errors), Converter={StaticResource ToVisibility}}">
+                <TextBlock.Text>
+                    <MultiBinding StringFormat=" {0}">
+                        <Binding ElementName="tbAddSection_Locality" Path="(Validation.Errors)[0].ErrorContent"/>
+                    </MultiBinding>
+                </TextBlock.Text>
+                </TextBlock>
+
+                <TextBlock Visibility="{Binding ElementName=tbAddSection_Phone, Path=(Validation.Errors), Converter={StaticResource ToVisibility}}">
+                <TextBlock.Text>
+                    <MultiBinding StringFormat=" {0}">
+                        <Binding ElementName="tbAddSection_Phone" Path="(Validation.Errors)[0].ErrorContent"/>
+                    </MultiBinding>
+                </TextBlock.Text>
+                </TextBlock>
+
+                <TextBlock Visibility="{Binding ElementName=tbAddSection_Email, Path=(Validation.Errors), Converter={StaticResource ToVisibility}}">
+                <TextBlock.Text>
+                    <MultiBinding StringFormat=" {0}">
+                        <Binding ElementName="tbAddSection_Email" Path="(Validation.Errors)[0].ErrorContent"/>
+                    </MultiBinding>
+                </TextBlock.Text>
+                </TextBlock>
+            </StackPanel>
+
+            <WrapPanel HorizontalAlignment="Center" Margin="10,35,10,10">
+                <Button Content="Anuluj" Width="110" Height="60" Margin="5" Padding="10,3,10,3" Command="Close"
+                        Name="button_Close" VerticalAlignment="Top"></Button>
+                <Button Content="Zapisz" Width="110" Height="60" Margin="5" Padding="10,3,10,3"
+                        Name="button_Save" VerticalAlignment="Top" Click="button_Save_Click">
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="IsEnabled" Value="false" />
+                            <Style.Triggers>
+                                <MultiDataTrigger>
+                                    <MultiDataTrigger.Conditions>
+                                        <Condition Binding="{Binding ElementName=tbAddSection_Name, Path=(Validation.HasError)}" Value="false" />
+                                        <Condition Binding="{Binding ElementName=tbAddSection_ShortName, Path=(Validation.HasError)}" Value="false" />
+                                        <Condition Binding="{Binding ElementName=tbAddSection_Street, Path=(Validation.HasError)}" Value="false" />
+                                        <Condition Binding="{Binding ElementName=tbAddSection_PostalCode, Path=(Validation.HasError)}" Value="false" />
+                                        <Condition Binding="{Binding ElementName=tbAddSection_Post, Path=(Validation.HasError)}" Value="false" />
+                                        <Condition Binding="{Binding ElementName=tbAddSection_Locality, Path=(Validation.HasError)}" Value="false" />
+                                        <Condition Binding="{Binding ElementName=tbAddSection_Phone, Path=(Validation.HasError)}" Value="false" />
+                                        <Condition Binding="{Binding ElementName=tbAddSection_Email, Path=(Validation.HasError)}" Value="false" />
+                                    </MultiDataTrigger.Conditions>
+                                    <Setter Property="IsEnabled" Value="true" />
+                                </MultiDataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+            </WrapPanel>
+        </StackPanel>
+    </ScrollViewer>
+</Window>

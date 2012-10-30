@@ -1,0 +1,64 @@
+﻿<Window x:Class="FixedAssetsApp.Views.PeripheralDeviceEditView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      KeyDown="Window_KeyDown" Title="Urządzenie peryferyjne" xmlns:validators="clr-namespace:FixedAssetsApp.Validation"
+      xmlns:collectionVisiblity="clr-namespace:FixedAssetsApp.Converters" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <collectionVisiblity:ErrorCollectionToVisibilityConverter x:Key="ToVisibility" />
+        <Style TargetType="TextBlock">
+            <Setter Property="Foreground" Value="Red" />
+        </Style>
+    </Window.Resources>
+    <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.Close" 
+                        Executed="CloseCommandHandler"/>
+    </Window.CommandBindings>
+    <ScrollViewer>
+        <StackPanel>
+            <Label Name="Label_AddOrEditPeripheral" FontFamily="Arial" FontSize="22" FontStyle="Italic" HorizontalAlignment="Center"></Label>
+            <Label>Nazwa:</Label>
+            <TextBox Name="tbAddPeripheral_Name" HorizontalAlignment="Stretch" Margin="0 0 15 10">
+                <Binding Path="name" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                    <Binding.ValidationRules>
+                        <validators:StringRangeValidationRule ValidatesOnTargetUpdated="True"
+                                        MinimumLength="1" MaximumLength="255" Empty="False"
+                                        ErrorMessage="Pole nazwa nie może być puste. Maksymalna długość 255 znaków" />
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox>
+            <TextBlock Visibility="{Binding ElementName=tbAddPeripheral_Name, Path=(Validation.Errors), Converter={StaticResource ToVisibility}}">
+                <TextBlock.Text>
+                    <MultiBinding StringFormat=" {0}">
+                        <Binding ElementName="tbAddPeripheral_Name" Path="(Validation.Errors)[0].ErrorContent"/>
+                    </MultiBinding>
+                </TextBlock.Text>
+            </TextBlock>
+
+            <WrapPanel HorizontalAlignment="Center" Margin="10,35,10,10">
+                <Button Content="Anuluj" Width="110" Height="60" Margin="5" Padding="10,3,10,3" Command="Close"
+                        Name="button_Close" VerticalAlignment="Top"></Button>
+                <Button Content="Zapisz" Width="110" Height="60" Margin="5" Padding="10,3,10,3"
+                        Name="button_Save" VerticalAlignment="Top" Click="button_Save_Click">
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="IsEnabled" Value="false" />
+                            <Style.Triggers>
+                                <MultiDataTrigger>
+                                    <MultiDataTrigger.Conditions>
+                                        <Condition Binding="{Binding ElementName=tbAddPeripheral_Name, Path=(Validation.HasError)}" Value="false" />
+                                    </MultiDataTrigger.Conditions>
+                                    <Setter Property="IsEnabled" Value="true" />
+                                </MultiDataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+            </WrapPanel>
+
+
+        </StackPanel>
+    </ScrollViewer>
+</Window>

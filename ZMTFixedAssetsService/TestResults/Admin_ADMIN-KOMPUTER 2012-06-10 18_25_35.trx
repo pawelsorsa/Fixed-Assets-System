@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="75527168-86f6-4abb-8d20-38b8ffefdd68" name="Admin@ADMIN-KOMPUTER 2012-06-10 18:25:35" runUser="Admin-Komputer\Admin" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="4f9f8b0b-8b33-4150-9c2c-ab389c9f2a2a">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Admin_ADMIN-KOMPUTER 2012-06-10 18_25_35">
+      <DeploymentItem filename="C:\Users\Admin\Documents\Visual Studio 2010\Projects\ZMTFixedAssets\EF_ZMTdbEntities\bin\Debug\EF_ZMTdbContent.dll" />
+      <DeploymentItem filename="C:\Users\Admin\Documents\Visual Studio 2010\Projects\EF_ZMTdbConnection\EF_ZMTdbConnection\bin\Debug\EF_ZMTdbConnection.dll" />
+      <DeploymentItem filename="C:\Users\Admin\Documents\Visual Studio 2010\Projects\ZMTFixedAssets\EF_ZMTdbEntities\bin\Debug\EF_ZMT_DbContext.dll" />
+      <DeploymentItem filename="C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssets\FixedAssets\bin\Debug\FixedAssets.dll" />
+      <DeploymentItem filename="C:\Users\Admin\Documents\Visual Studio 2010\Projects\EF_ZMTdbConnection\EF_ZMTdbEntities\bin\Debug\EF_ZMTdbEntities.dll" />
+      <DeploymentItem filename="C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsTransaction\FixedAssetsTransaction\bin\Debug\FixedAssetsTransactions.dll" />
+      <DeploymentItem filename="C:\Users\Admin\Documents\Visual Studio 2010\Projects\ZMTFixedAssetsService\ZMTFixedAssetsService\bin\Debug\ZMTFixedAssetsService.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-06-10T18:25:35.3016313+02:00" queuing="2012-06-10T18:25:39.8408910+02:00" start="2012-06-10T18:25:40.4209241+02:00" finish="2012-06-10T18:25:50.1684817+02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="6" executed="6" passed="6" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CanAddContractor" storage="c:\users\admin\documents\visual studio 2010\projects\zmtfixedassetsservice\transactionstests\bin\debug\transactionstests.dll" id="df00893b-880b-6aab-9c47-fca90474ffed">
+      <Execution id="d0bc9a7f-e17d-41a1-8417-03ac70107fd2" />
+      <TestMethod codeBase="C:/Users/Admin/Documents/Visual Studio 2010/Projects/ZMTFixedAssetsService/TransactionsTests/bin/Debug/TransactionsTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TransactionsTests.ContractorTransactionsUnitTests, TransactionsTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CanAddContractor" />
+    </UnitTest>
+    <UnitTest name="CanEditContractor" storage="c:\users\admin\documents\visual studio 2010\projects\zmtfixedassetsservice\transactionstests\bin\debug\transactionstests.dll" id="97e67862-40e5-4ee2-fffe-2ec216626717">
+      <Execution id="0fe991ed-2d3d-441e-adba-60811b6b13de" />
+      <TestMethod codeBase="C:/Users/Admin/Documents/Visual Studio 2010/Projects/ZMTFixedAssetsService/TransactionsTests/bin/Debug/TransactionsTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TransactionsTests.ContractorTransactionsUnitTests, TransactionsTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CanEditContractor" />
+    </UnitTest>
+    <UnitTest name="CantAddContractorWithoutData" storage="c:\users\admin\documents\visual studio 2010\projects\zmtfixedassetsservice\transactionstests\bin\debug\transactionstests.dll" id="b7486c62-a7c2-4bfd-ff90-971df2de0781">
+      <Execution id="9996988e-02da-4a77-a3b2-65cd8ffa4614" />
+      <TestMethod codeBase="C:/Users/Admin/Documents/Visual Studio 2010/Projects/ZMTFixedAssetsService/TransactionsTests/bin/Debug/TransactionsTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TransactionsTests.ContractorTransactionsUnitTests, TransactionsTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CantAddContractorWithoutData" />
+    </UnitTest>
+    <UnitTest name="CanDeleteContractor" storage="c:\users\admin\documents\visual studio 2010\projects\zmtfixedassetsservice\transactionstests\bin\debug\transactionstests.dll" id="101731df-b542-db59-4bed-789657d5f13b">
+      <Execution id="2061cdb1-f54f-49a2-b16a-711992c03bcd" />
+      <TestMethod codeBase="C:/Users/Admin/Documents/Visual Studio 2010/Projects/ZMTFixedAssetsService/TransactionsTests/bin/Debug/TransactionsTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TransactionsTests.ContractorTransactionsUnitTests, TransactionsTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CanDeleteContractor" />
+    </UnitTest>
+    <UnitTest name="CantEditNotExistingContractor" storage="c:\users\admin\documents\visual studio 2010\projects\zmtfixedassetsservice\transactionstests\bin\debug\transactionstests.dll" id="93648251-a702-2ab1-2bc6-e73bb9c57c03">
+      <Execution id="c8a87082-9435-4a8e-9b3d-ae51b2cfe7af" />
+      <TestMethod codeBase="C:/Users/Admin/Documents/Visual Studio 2010/Projects/ZMTFixedAssetsService/TransactionsTests/bin/Debug/TransactionsTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TransactionsTests.ContractorTransactionsUnitTests, TransactionsTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CantEditNotExistingContractor" />
+    </UnitTest>
+    <UnitTest name="CantDeleteNotExistingContractor" storage="c:\users\admin\documents\visual studio 2010\projects\zmtfixedassetsservice\transactionstests\bin\debug\transactionstests.dll" id="0648586b-471f-1e1f-38ca-3b4cc81cb2d7">
+      <Execution id="e34035cc-acca-46c8-8e49-54bc0d719a42" />
+      <TestMethod codeBase="C:/Users/Admin/Documents/Visual Studio 2010/Projects/ZMTFixedAssetsService/TransactionsTests/bin/Debug/TransactionsTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TransactionsTests.ContractorTransactionsUnitTests, TransactionsTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CantDeleteNotExistingContractor" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0648586b-471f-1e1f-38ca-3b4cc81cb2d7" executionId="e34035cc-acca-46c8-8e49-54bc0d719a42" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="101731df-b542-db59-4bed-789657d5f13b" executionId="2061cdb1-f54f-49a2-b16a-711992c03bcd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="93648251-a702-2ab1-2bc6-e73bb9c57c03" executionId="c8a87082-9435-4a8e-9b3d-ae51b2cfe7af" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="97e67862-40e5-4ee2-fffe-2ec216626717" executionId="0fe991ed-2d3d-441e-adba-60811b6b13de" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b7486c62-a7c2-4bfd-ff90-971df2de0781" executionId="9996988e-02da-4a77-a3b2-65cd8ffa4614" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="df00893b-880b-6aab-9c47-fca90474ffed" executionId="d0bc9a7f-e17d-41a1-8417-03ac70107fd2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="e34035cc-acca-46c8-8e49-54bc0d719a42" testId="0648586b-471f-1e1f-38ca-3b4cc81cb2d7" testName="CantDeleteNotExistingContractor" computerName="ADMIN-KOMPUTER" duration="00:00:05.4533343" startTime="2012-06-10T18:25:40.5239300+02:00" endTime="2012-06-10T18:25:47.2023120+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e34035cc-acca-46c8-8e49-54bc0d719a42">
+    </UnitTestResult>
+    <UnitTestResult executionId="2061cdb1-f54f-49a2-b16a-711992c03bcd" testId="101731df-b542-db59-4bed-789657d5f13b" testName="CanDeleteContractor" computerName="ADMIN-KOMPUTER" duration="00:00:00.4963115" startTime="2012-06-10T18:25:47.2083123+02:00" endTime="2012-06-10T18:25:47.7183415+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2061cdb1-f54f-49a2-b16a-711992c03bcd">
+    </UnitTestResult>
+    <UnitTestResult executionId="c8a87082-9435-4a8e-9b3d-ae51b2cfe7af" testId="93648251-a702-2ab1-2bc6-e73bb9c57c03" testName="CantEditNotExistingContractor" computerName="ADMIN-KOMPUTER" duration="00:00:00.1448132" startTime="2012-06-10T18:25:47.7293421+02:00" endTime="2012-06-10T18:25:47.9123526+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c8a87082-9435-4a8e-9b3d-ae51b2cfe7af">
+    </UnitTestResult>
+    <UnitTestResult executionId="0fe991ed-2d3d-441e-adba-60811b6b13de" testId="97e67862-40e5-4ee2-fffe-2ec216626717" testName="CanEditContractor" computerName="ADMIN-KOMPUTER" duration="00:00:00.1063778" startTime="2012-06-10T18:25:47.9193530+02:00" endTime="2012-06-10T18:25:48.0423601+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0fe991ed-2d3d-441e-adba-60811b6b13de">
+    </UnitTestResult>
+    <UnitTestResult executionId="9996988e-02da-4a77-a3b2-65cd8ffa4614" testId="b7486c62-a7c2-4bfd-ff90-971df2de0781" testName="CantAddContractorWithoutData" computerName="ADMIN-KOMPUTER" duration="00:00:00.3813210" startTime="2012-06-10T18:25:48.0513606+02:00" endTime="2012-06-10T18:25:48.4503834+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9996988e-02da-4a77-a3b2-65cd8ffa4614">
+    </UnitTestResult>
+    <UnitTestResult executionId="d0bc9a7f-e17d-41a1-8417-03ac70107fd2" testId="df00893b-880b-6aab-9c47-fca90474ffed" testName="CanAddContractor" computerName="ADMIN-KOMPUTER" duration="00:00:00.0422874" startTime="2012-06-10T18:25:48.4613840+02:00" endTime="2012-06-10T18:25:48.5173872+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d0bc9a7f-e17d-41a1-8417-03ac70107fd2">
+    </UnitTestResult>
+  </Results>
+</TestRun>

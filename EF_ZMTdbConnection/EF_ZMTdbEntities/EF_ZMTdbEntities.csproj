@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{219BB186-3FB5-4D9C-978B-24B7F3029D25}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EF_ZMTdbEntities</RootNamespace>
+    <AssemblyName>EF_ZMTdbEntities</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\EF_ZMTdbConnection\Contractor.cs">
+      <Link>Contractor.cs</Link>
+      <DependentUpon>EF_ZMTdbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="..\EF_ZMTdbConnection\Device.cs">
+      <Link>Device.cs</Link>
+      <DependentUpon>EF_ZMTdbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="..\EF_ZMTdbConnection\EF_ZMTdbModel.cs">
+      <Link>EF_ZMTdbModel.cs</Link>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EF_ZMTdbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="..\EF_ZMTdbConnection\FixedAsset.cs">
+      <Link>FixedAsset.cs</Link>
+      <DependentUpon>EF_ZMTdbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="..\EF_ZMTdbConnection\Kind.cs">
+      <Link>Kind.cs</Link>
+      <DependentUpon>EF_ZMTdbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="..\EF_ZMTdbConnection\Licence.cs">
+      <Link>Licence.cs</Link>
+      <DependentUpon>EF_ZMTdbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="..\EF_ZMTdbConnection\MembershipRole.cs">
+      <Link>MembershipRole.cs</Link>
+      <DependentUpon>EF_ZMTdbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="..\EF_ZMTdbConnection\MembershipUser.cs">
+      <Link>MembershipUser.cs</Link>
+      <DependentUpon>EF_ZMTdbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="..\EF_ZMTdbConnection\PeripheralDevice.cs">
+      <Link>PeripheralDevice.cs</Link>
+      <DependentUpon>EF_ZMTdbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="..\EF_ZMTdbConnection\Person.cs">
+      <Link>Person.cs</Link>
+      <DependentUpon>EF_ZMTdbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="..\EF_ZMTdbConnection\Section.cs">
+      <Link>Section.cs</Link>
+      <DependentUpon>EF_ZMTdbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="..\EF_ZMTdbConnection\Subgroup.cs">
+      <Link>Subgroup.cs</Link>
+      <DependentUpon>EF_ZMTdbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\EF_ZMTdbConnection\EF_ZMTdbModel.tt">
+      <Link>EF_ZMTdbModel.tt</Link>
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>EF_ZMTdbModel.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

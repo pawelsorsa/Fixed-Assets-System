@@ -1,0 +1,7 @@
+c:\users\admin\documents\visual studio 2010\Projects\FixedAssets\FixedAssets\obj\Debug\ResolveAssemblyReference.cache
+c:\users\admin\documents\visual studio 2010\Projects\FixedAssets\FixedAssets\bin\Debug\FixedAssets.dll
+c:\users\admin\documents\visual studio 2010\Projects\FixedAssets\FixedAssets\bin\Debug\FixedAssets.pdb
+c:\users\admin\documents\visual studio 2010\Projects\FixedAssets\FixedAssets\bin\Debug\EF_ZMTdbEntities.dll
+c:\users\admin\documents\visual studio 2010\Projects\FixedAssets\FixedAssets\bin\Debug\EF_ZMTdbEntities.pdb
+c:\users\admin\documents\visual studio 2010\Projects\FixedAssets\FixedAssets\obj\Debug\FixedAssets.dll
+c:\users\admin\documents\visual studio 2010\Projects\FixedAssets\FixedAssets\obj\Debug\FixedAssets.pdb

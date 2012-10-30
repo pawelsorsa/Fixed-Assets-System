@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{130F8BEB-46D4-4CE1-9F91-39D0FCE87793}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FixedAssets</RootNamespace>
+    <AssemblyName>FixedAssets</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EF_ZMTdbEntities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\EF_ZMTdbConnection\EF_ZMTdbEntities\bin\Debug\EF_ZMTdbEntities.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abstracts\Services\IContractorService..cs" />
+    <Compile Include="Abstracts\Services\IDeviceService.cs" />
+    <Compile Include="Abstracts\Services\IFixedAssetService.cs" />
+    <Compile Include="Abstracts\Services\IKindService.cs" />
+    <Compile Include="Abstracts\Services\ILicenceService.cs" />
+    <Compile Include="Abstracts\Services\IMembershipRoleService.cs" />
+    <Compile Include="Abstracts\Services\IMembershipUserService.cs" />
+    <Compile Include="Abstracts\Services\IPeripheralDeviceService.cs" />
+    <Compile Include="Abstracts\Services\IPersonService.cs" />
+    <Compile Include="Abstracts\Services\ISectionService.cs" />
+    <Compile Include="Abstracts\Services\ISubgroupService.cs" />
+    <Compile Include="Abstracts\Transactions\IContractorTransactions.cs" />
+    <Compile Include="Abstracts\Transactions\IDeviceTransactions.cs" />
+    <Compile Include="Abstracts\Transactions\IFixedAssetTransactions.cs" />
+    <Compile Include="Abstracts\Transactions\IKindTransactions.cs" />
+    <Compile Include="Abstracts\Transactions\ILicenceTransactions.cs" />
+    <Compile Include="Abstracts\Transactions\IMembershipRoleTransactions.cs" />
+    <Compile Include="Abstracts\Transactions\IMembershipUserTransactions.cs" />
+    <Compile Include="Abstracts\Transactions\IPeripheralDeviceTransactions.cs" />
+    <Compile Include="Abstracts\Transactions\IPersonTransactions.cs" />
+    <Compile Include="Abstracts\Transactions\ISectionTransactions.cs" />
+    <Compile Include="Abstracts\Transactions\ISubgroupTransactions.cs" />
+    <Compile Include="Concrete\Controllers\ContractorController.cs" />
+    <Compile Include="Concrete\Controllers\MembershipRoleController.cs" />
+    <Compile Include="Concrete\Controllers\MembershipUserController.cs" />
+    <Compile Include="Concrete\Controllers\SubgroupController.cs" />
+    <Compile Include="Concrete\Controllers\PeripheralDeviceController.cs" />
+    <Compile Include="Concrete\Controllers\KindController.cs" />
+    <Compile Include="Concrete\Controllers\DeviceController.cs" />
+    <Compile Include="Concrete\Controllers\FixedAssetController.cs" />
+    <Compile Include="Concrete\Controllers\LicenceController.cs" />
+    <Compile Include="Concrete\Controllers\PersonController.cs" />
+    <Compile Include="Concrete\Controllers\SectionController.cs" />
+    <Compile Include="Abstracts\DbContexts\EntityFrameworkConnection.cs" />
+    <Compile Include="Abstracts\DbContexts\DbContext.cs" />
+    <Compile Include="Abstracts\Repositories\IMembershipRoleRepository.cs" />
+    <Compile Include="Abstracts\Repositories\IMembershipUserRepository.cs" />
+    <Compile Include="Abstracts\Repositories\ISubgroupRepository.cs" />
+    <Compile Include="Abstracts\Repositories\IPeripheralDeviceRepository.cs" />
+    <Compile Include="Abstracts\Repositories\ILicenceRepository.cs" />
+    <Compile Include="Abstracts\Repositories\IKindRepository.cs" />
+    <Compile Include="Abstracts\Repositories\IContractorRepository.cs" />
+    <Compile Include="Abstracts\Repositories\IDeviceRepository.cs" />
+    <Compile Include="Abstracts\Repositories\IFixedAssetRepository.cs" />
+    <Compile Include="Abstracts\Repositories\IPersonRepository.cs" />
+    <Compile Include="Abstracts\Repositories\ISectionRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

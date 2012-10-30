@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ZMTdbModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="ZMTdbConnection" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Contractors" EntityType="ZMTdbModel.Contractor" />
+    <EntitySet Name="Devices" EntityType="ZMTdbModel.Device" />
+    <EntitySet Name="FixedAssets" EntityType="ZMTdbModel.FixedAsset" />
+    <EntitySet Name="Kinds" EntityType="ZMTdbModel.Kind" />
+    <EntitySet Name="Licences" EntityType="ZMTdbModel.Licence" />
+    <EntitySet Name="PeripheralDevices" EntityType="ZMTdbModel.PeripheralDevice" />
+    <EntitySet Name="People" EntityType="ZMTdbModel.Person" />
+    <EntitySet Name="Sections" EntityType="ZMTdbModel.Section" />
+    <EntitySet Name="Subgroups" EntityType="ZMTdbModel.Subgroup" />
+    <AssociationSet Name="FK__Device__id_fixed__3D5E1FD2" Association="ZMTdbModel.FK__Device__id_fixed__3D5E1FD2">
+      <End Role="FixedAsset" EntitySet="FixedAssets" />
+      <End Role="Device" EntitySet="Devices" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Device__id_perip__17F790F9" Association="ZMTdbModel.FK__Device__id_perip__17F790F9">
+      <End Role="PeripheralDevice" EntitySet="PeripheralDevices" />
+      <End Role="Device" EntitySet="Devices" />
+    </AssociationSet>
+    <AssociationSet Name="FK__FixedAsse__id_ki__2F10007B" Association="ZMTdbModel.FK__FixedAsse__id_ki__2F10007B">
+      <End Role="Kind" EntitySet="Kinds" />
+      <End Role="FixedAsset" EntitySet="FixedAssets" />
+    </AssociationSet>
+    <AssociationSet Name="FK__FixedAsse__id_pe__2E1BDC42" Association="ZMTdbModel.FK__FixedAsse__id_pe__2E1BDC42">
+      <End Role="Person" EntitySet="People" />
+      <End Role="FixedAsset" EntitySet="FixedAssets" />
+    </AssociationSet>
+    <AssociationSet Name="FK__FixedAsse__id_su__300424B4" Association="ZMTdbModel.FK__FixedAsse__id_su__300424B4">
+      <End Role="Subgroup" EntitySet="Subgroups" />
+      <End Role="FixedAsset" EntitySet="FixedAssets" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FixedAsset_Person" Association="ZMTdbModel.FK_FixedAsset_Person">
+      <End Role="Person" EntitySet="People" />
+      <End Role="FixedAsset" EntitySet="FixedAssets" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FixedAsset_Person1" Association="ZMTdbModel.FK_FixedAsset_Person1">
+      <End Role="Person" EntitySet="People" />
+      <End Role="FixedAsset" EntitySet="FixedAssets" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Licence_FixedAsset" Association="ZMTdbModel.FK_Licence_FixedAsset">
+      <End Role="FixedAsset" EntitySet="FixedAssets" />
+      <End Role="Licence" EntitySet="Licences" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Licence__id_kind__3E52440B" Association="ZMTdbModel.FK__Licence__id_kind__3E52440B">
+      <End Role="Kind" EntitySet="Kinds" />
+      <End Role="Licence" EntitySet="Licences" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Licence_Person" Association="ZMTdbModel.FK_Licence_Person">
+      <End Role="Person" EntitySet="People" />
+      <End Role="Licence" EntitySet="Licences" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Licence_Person1" Association="ZMTdbModel.FK_Licence_Person1">
+      <End Role="Person" EntitySet="People" />
+      <End Role="Licence" EntitySet="Licences" />
+    </AssociationSet>
+    <AssociationSet Name="FixedAsset_Contractor" Association="ZMTdbModel.FixedAsset_Contractor">
+      <End Role="Contractor" EntitySet="Contractors" />
+      <End Role="FixedAsset" EntitySet="FixedAssets" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Contractor">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="nip" Type="Int32" />
+    <Property Name="street" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="postal_code" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="city" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="country" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="FixedAssets" Relationship="ZMTdbModel.FixedAsset_Contractor" FromRole="Contractor" ToRole="FixedAsset" />
+  </EntityType>
+  <EntityType Name="Device">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_peripheral_device" Type="Int32" Nullable="false" />
+    <Property Name="serial_number" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ip_address" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="mac_address" Type="String" MaxLength="17" Unicode="false" FixedLength="false" />
+    <Property Name="producer" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="model" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="comment" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="id_fixed_asset" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="FixedAsset" Relationship="ZMTdbModel.FK__Device__id_fixed__3D5E1FD2" FromRole="Device" ToRole="FixedAsset" />
+    <NavigationProperty Name="PeripheralDevice" Relationship="ZMTdbModel.FK__Device__id_perip__17F790F9" FromRole="Device" ToRole="PeripheralDevice" />
+  </EntityType>
+  <EntityType Name="FixedAsset">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="inventory_number" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="comment" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="id_person" Type="Int32" />
+    <Property Name="date_of_activation" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="date_of_desactivation" Type="DateTime" />
+    <Property Name="serial_number" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="MPK" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="quantity" Type="Int32" />
+    <Property Name="localization" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="id_kind" Type="Int32" />
+    <Property Name="id_subgroup" Type="Int32" />
+    <Property Name="last_modifed_date" Type="DateTime" />
+    <Property Name="last_modifed_id" Type="Int32" />
+    <Property Name="cassation" Type="Boolean" Nullable="false" />
+    <Property Name="created_by" Type="Int32" />
+    <NavigationProperty Name="Devices" Relationship="ZMTdbModel.FK__Device__id_fixed__3D5E1FD2" FromRole="FixedAsset" ToRole="Device" />
+    <NavigationProperty Name="Kind" Relationship="ZMTdbModel.FK__FixedAsse__id_ki__2F10007B" FromRole="FixedAsset" ToRole="Kind" />
+    <NavigationProperty Name="Person" Relationship="ZMTdbModel.FK__FixedAsse__id_pe__2E1BDC42" FromRole="FixedAsset" ToRole="Person" />
+    <NavigationProperty Name="Subgroup" Relationship="ZMTdbModel.FK__FixedAsse__id_su__300424B4" FromRole="FixedAsset" ToRole="Subgroup" />
+    <NavigationProperty Name="Person1" Relationship="ZMTdbModel.FK_FixedAsset_Person" FromRole="FixedAsset" ToRole="Person" />
+    <NavigationProperty Name="Person2" Relationship="ZMTdbModel.FK_FixedAsset_Person1" FromRole="FixedAsset" ToRole="Person" />
+    <NavigationProperty Name="Licences" Relationship="ZMTdbModel.FK_Licence_FixedAsset" FromRole="FixedAsset" ToRole="Licence" />
+    <NavigationProperty Name="Contractors" Relationship="ZMTdbModel.FixedAsset_Contractor" FromRole="FixedAsset" ToRole="Contractor" />
+  </EntityType>
+  <EntityType Name="Kind">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="FixedAssets" Relationship="ZMTdbModel.FK__FixedAsse__id_ki__2F10007B" FromRole="Kind" ToRole="FixedAsset" />
+    <NavigationProperty Name="Licences" Relationship="ZMTdbModel.FK__Licence__id_kind__3E52440B" FromRole="Kind" ToRole="Licence" />
+  </EntityType>
+  <EntityType Name="Licence">
+    <Key>
+      <PropertyRef Name="id_number" />
+    </Key>
+    <Property Name="id_number" Type="Int32" Nullable="false" />
+    <Property Name="inventory_number" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="assign_fixed_asset" Type="Int32" Nullable="false" />
+    <Property Name="licence_number" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="comment" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="id_kind" Type="Int32" Nullable="false" />
+    <Property Name="created_by" Type="Int32" Nullable="false" />
+    <Property Name="last_modified_date" Type="DateTime" Nullable="false" />
+    <Property Name="last_modified_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="FixedAsset" Relationship="ZMTdbModel.FK_Licence_FixedAsset" FromRole="Licence" ToRole="FixedAsset" />
+    <NavigationProperty Name="Kind" Relationship="ZMTdbModel.FK__Licence__id_kind__3E52440B" FromRole="Licence" ToRole="Kind" />
+    <NavigationProperty Name="Person" Relationship="ZMTdbModel.FK_Licence_Person" FromRole="Licence" ToRole="Person" />
+    <NavigationProperty Name="Person1" Relationship="ZMTdbModel.FK_Licence_Person1" FromRole="Licence" ToRole="Person" />
+  </EntityType>
+  <EntityType Name="PeripheralDevice">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Devices" Relationship="ZMTdbModel.FK__Device__id_perip__17F790F9" FromRole="PeripheralDevice" ToRole="Device" />
+  </EntityType>
+  <EntityType Name="Person">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="surname" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="password" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="creation_date" Type="DateTime" Nullable="false" />
+    <Property Name="last_login_date" Type="DateTime" />
+    <Property Name="is_online" Type="Boolean" Nullable="false" />
+    <Property Name="is_active" Type="Boolean" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="area_code" Type="Int32" />
+    <Property Name="phone_number" Type="Int32" />
+    <Property Name="phone_number2" Type="Int32" />
+    <Property Name="id_section" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="FixedAssets" Relationship="ZMTdbModel.FK__FixedAsse__id_pe__2E1BDC42" FromRole="Person" ToRole="FixedAsset" />
+    <NavigationProperty Name="FixedAssets1" Relationship="ZMTdbModel.FK_FixedAsset_Person" FromRole="Person" ToRole="FixedAsset" />
+    <NavigationProperty Name="FixedAssets2" Relationship="ZMTdbModel.FK_FixedAsset_Person1" FromRole="Person" ToRole="FixedAsset" />
+    <NavigationProperty Name="Licences" Relationship="ZMTdbModel.FK_Licence_Person" FromRole="Person" ToRole="Licence" />
+    <NavigationProperty Name="Licences1" Relationship="ZMTdbModel.FK_Licence_Person1" FromRole="Person" ToRole="Licence" />
+  </EntityType>
+  <EntityType Name="Section">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="short_name" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="street" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="postal_code" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="post" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="locality" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="phone_number" Type="String" MaxLength="9" Unicode="true" FixedLength="true" />
+    <Property Name="email" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Subgroup">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="short_name" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="FixedAssets" Relationship="ZMTdbModel.FK__FixedAsse__id_su__300424B4" FromRole="Subgroup" ToRole="FixedAsset" />
+  </EntityType>
+  <Association Name="FK__Device__id_fixed__3D5E1FD2">
+    <End Role="FixedAsset" Type="ZMTdbModel.FixedAsset" Multiplicity="1" />
+    <End Role="Device" Type="ZMTdbModel.Device" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FixedAsset">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Device">
+        <PropertyRef Name="id_fixed_asset" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Device__id_perip__17F790F9">
+    <End Role="PeripheralDevice" Type="ZMTdbModel.PeripheralDevice" Multiplicity="1" />
+    <End Role="Device" Type="ZMTdbModel.Device" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PeripheralDevice">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Device">
+        <PropertyRef Name="id_peripheral_device" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__FixedAsse__id_ki__2F10007B">
+    <End Role="Kind" Type="ZMTdbModel.Kind" Multiplicity="0..1" />
+    <End Role="FixedAsset" Type="ZMTdbModel.FixedAsset" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kind">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="FixedAsset">
+        <PropertyRef Name="id_kind" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__FixedAsse__id_pe__2E1BDC42">
+    <End Role="Person" Type="ZMTdbModel.Person" Multiplicity="0..1" />
+    <End Role="FixedAsset" Type="ZMTdbModel.FixedAsset" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Person">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="FixedAsset">
+        <PropertyRef Name="id_person" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__FixedAsse__id_su__300424B4">
+    <End Role="Subgroup" Type="ZMTdbModel.Subgroup" Multiplicity="0..1" />
+    <End Role="FixedAsset" Type="ZMTdbModel.FixedAsset" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Subgroup">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="FixedAsset">
+        <PropertyRef Name="id_subgroup" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FixedAsset_Person">
+    <End Role="Person" Type="ZMTdbModel.Person" Multiplicity="0..1" />
+    <End Role="FixedAsset" Type="ZMTdbModel.FixedAsset" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Person">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="FixedAsset">
+        <PropertyRef Name="last_modifed_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FixedAsset_Person1">
+    <End Role="Person" Type="ZMTdbModel.Person" Multiplicity="0..1" />
+    <End Role="FixedAsset" Type="ZMTdbModel.FixedAsset" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Person">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="FixedAsset">
+        <PropertyRef Name="created_by" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Licence_FixedAsset">
+    <End Role="FixedAsset" Type="ZMTdbModel.FixedAsset" Multiplicity="1" />
+    <End Role="Licence" Type="ZMTdbModel.Licence" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FixedAsset">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Licence">
+        <PropertyRef Name="assign_fixed_asset" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Licence__id_kind__3E52440B">
+    <End Role="Kind" Type="ZMTdbModel.Kind" Multiplicity="1" />
+    <End Role="Licence" Type="ZMTdbModel.Licence" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kind">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Licence">
+        <PropertyRef Name="id_kind" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Licence_Person">
+    <End Role="Person" Type="ZMTdbModel.Person" Multiplicity="1" />
+    <End Role="Licence" Type="ZMTdbModel.Licence" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Person">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Licence">
+        <PropertyRef Name="created_by" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Licence_Person1">
+    <End Role="Person" Type="ZMTdbModel.Person" Multiplicity="1" />
+    <End Role="Licence" Type="ZMTdbModel.Licence" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Person">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Licence">
+        <PropertyRef Name="last_modified_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FixedAsset_Contractor">
+    <End Role="Contractor" Type="ZMTdbModel.Contractor" Multiplicity="*" />
+    <End Role="FixedAsset" Type="ZMTdbModel.FixedAsset" Multiplicity="*" />
+  </Association>
+</Schema>

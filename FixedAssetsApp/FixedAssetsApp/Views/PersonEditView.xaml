@@ -1,0 +1,196 @@
+﻿<Window x:Class="FixedAssetsApp.Views.PersonEditView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:c="clr-namespace:FixedAssetsApp.FixedAssetsWebService"
+        xmlns:validators="clr-namespace:FixedAssetsApp.Validation"
+        xmlns:local="clr-namespace:FixedAssetsApp.Converters" WindowStartupLocation="CenterScreen"
+        Title="Pracownik" KeyDown="Window_KeyDown" Width="600" Height="700" MinWidth="600" MinHeight="700">
+    <Window.Resources>
+        <local:ErrorCollectionToVisibilityConverter x:Key="ToVisibility" />
+        <Style TargetType="TextBlock">
+            <Setter Property="Foreground" Value="Red" />
+        </Style>
+    </Window.Resources>
+    <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.Close" 
+                        Executed="CloseCommandHandler"/>
+    </Window.CommandBindings>
+
+    <ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden" x:Name="PersonEditScroll" ScrollViewer.CanContentScroll="True">
+        <Grid Name="Grid_EditPerson" ShowGridLines="True">
+             <StackPanel Name="stackAddUser" Margin="10,4,0,0">
+                <Label Name="AddOrEditPerson" FontSize="22" FontStyle="Italic"></Label>
+                <Label>ID:</Label>
+                <WrapPanel>  
+                <TextBox Name="tbAddUser_Id" Width="200" Margin="0 0 15 10">
+                        <Binding Path="id" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                            <Binding.ValidationRules>
+                          <validators:IntegerRangeValidationRule ValidatesOnTargetUpdated="True"
+                                        Minimum="1" Maximum="1000000" 
+                                        ErrorMessage="Podaj liczbę z zakresu 0 - 10000."/>
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox>
+                <TextBlock Visibility="{Binding ElementName=tbAddUser_Id, Path=(Validation.Errors), Converter={StaticResource ToVisibility}}">
+                <TextBlock.Text>
+                    <MultiBinding StringFormat=" {0}">
+                        <Binding ElementName="tbAddUser_Id" Path="(Validation.Errors)[0].ErrorContent"/>
+                    </MultiBinding>
+                </TextBlock.Text>
+                </TextBlock>
+                </WrapPanel>
+                <Label>Imię:</Label>
+                <WrapPanel>
+                 <TextBox Name="tbAddUser_Name" Width="200" Margin="0 0 15 10" >
+                        <Binding Path="name" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                        <Binding.ValidationRules>
+                        <validators:StringRangeValidationRule ValidatesOnTargetUpdated="True"
+                                        MinimumLength="2"
+                                        MaximumLength="15"
+                                        ErrorMessage="Pole imię powinno zawierać od 2 do 15 znaków." />
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox>
+                    <TextBlock Visibility="{Binding ElementName=tbAddUser_Name, Path=(Validation.Errors), Converter={StaticResource ToVisibility}}">
+                <TextBlock.Text>
+                    <MultiBinding StringFormat=" {0}">
+                        <Binding ElementName="tbAddUser_Name" Path="(Validation.Errors)[0].ErrorContent"/>
+                    </MultiBinding>
+                </TextBlock.Text>
+                    </TextBlock>
+                </WrapPanel>
+                <Label>Nazwisko:</Label>
+                <WrapPanel>
+                    <TextBox Name="tbAddUser_Surname" Width="200" Margin="0 0 15 10">
+                        <Binding Path="surname" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                    <Binding.ValidationRules>
+                        <validators:StringRangeValidationRule ValidatesOnTargetUpdated="True"
+                                        MinimumLength="2" 
+                                        MaximumLength="15"
+                                        ErrorMessage="Pole nazwisko powinno zawierać od 2 do 15 znaków." />
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox>
+                    <TextBlock Visibility="{Binding ElementName=tbAddUser_Surname, Path=(Validation.Errors), Converter={StaticResource ToVisibility}}">
+                <TextBlock.Text>
+                    <MultiBinding StringFormat=" {0}">
+                        <Binding ElementName="tbAddUser_Surname" Path="(Validation.Errors)[0].ErrorContent"/>
+                    </MultiBinding>
+                </TextBlock.Text>
+                    </TextBlock>
+                </WrapPanel>
+                 
+                <Label>Email:</Label>
+                <WrapPanel>
+                        <TextBox Name="tbAddUser_Email" Width="200" Margin="0 0 15 10">
+                        <Binding Path="email" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                                <Binding.ValidationRules>
+                                <validators:RegexValidationRule ValidatesOnTargetUpdated="True" Empty="true"
+                                        ErrorMessage="Podany adres email ma nieprawidłowy format." TypeRegax="email"   />
+                            </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox>
+                        <TextBlock Visibility="{Binding ElementName=tbAddUser_Email, Path=(Validation.Errors), Converter={StaticResource ToVisibility}}">
+                <TextBlock.Text>
+                    <MultiBinding StringFormat=" {0}">
+                        <Binding ElementName="tbAddUser_Email" Path="(Validation.Errors)[0].ErrorContent"/>
+                    </MultiBinding>
+                </TextBlock.Text>
+               </TextBlock>
+                </WrapPanel>
+                 
+                <Label>Numer kierunkowy:</Label>
+                <WrapPanel> 
+                <TextBox Name="tbAddUser_AreaCode" Width="200" Margin="0 0 15 10">
+                        <Binding Path="area_code" TargetNullValue='' UpdateSourceTrigger="PropertyChanged" Mode="TwoWay" ValidatesOnDataErrors="False" >
+                            <Binding.ValidationRules>
+                                <validators:IntegerLengthValidationRule ValidatesOnTargetUpdated="True" 
+                                        Minimum="2" Maximum="2" Empty="False"  
+                                        ErrorMessage="Pole nr. kierunkowy powinno zawierać 2 znaki"/>
+                            </Binding.ValidationRules>
+                        </Binding>
+            </TextBox>
+                    <TextBlock Visibility="{Binding ElementName=tbAddUser_AreaCode, Path=(Validation.Errors), Converter={StaticResource ToVisibility}}">
+                <TextBlock.Text>
+                    <MultiBinding StringFormat=" {0}">
+                        <Binding ElementName="tbAddUser_AreaCode" Path="(Validation.Errors)[0].ErrorContent"/>
+                    </MultiBinding>
+                </TextBlock.Text>
+                    </TextBlock>
+                </WrapPanel>
+                 
+                <Label>Telefon:</Label>
+                <WrapPanel>
+                 <TextBox Name="tbAddUser_Phone" Width="200" Margin="0 0 15 10">
+                        <Binding Path="phone_number" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                            <Binding.ValidationRules>
+                                <validators:IntegerLengthValidationRule ValidatesOnTargetUpdated="True"
+                                        Minimum="7" Maximum="7" Empty="False"  
+                                        ErrorMessage="Pole telefon powinno zawierać 7 znaków"/>
+                            </Binding.ValidationRules>
+                        </Binding>
+            </TextBox>
+                    <TextBlock Visibility="{Binding ElementName=tbAddUser_Phone, Path=(Validation.Errors), Converter={StaticResource ToVisibility}}">
+                <TextBlock.Text>
+                    <MultiBinding StringFormat=" {0}">
+                        <Binding ElementName="tbAddUser_Phone" Path="(Validation.Errors)[0].ErrorContent"/>
+                    </MultiBinding>
+                </TextBlock.Text>
+                    </TextBlock>
+                </WrapPanel>
+                 
+                <Label>Telefon komórkowy:</Label>
+                <WrapPanel>
+                    <TextBox Name="tbAddUser_Phone2" Width="200" Margin="0 0 15 10">
+                        <Binding Path="phone_number2" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay" TargetNullValue=''>
+                            <Binding.ValidationRules>
+                                <validators:IntegerLengthValidationRule ValidatesOnTargetUpdated="True"
+                                        Minimum="9" Maximum="9" Empty="True"  
+                                        ErrorMessage="Pole telefon komórkowy powinno zawierać 9 znaków"/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                </TextBox>
+                <TextBlock Visibility="{Binding ElementName=tbAddUser_Phone2, Path=(Validation.Errors), Converter={StaticResource ToVisibility}}">
+                <TextBlock.Text>
+                    <MultiBinding StringFormat=" {0}">
+                        <Binding ElementName="tbAddUser_Phone2" Path="(Validation.Errors)[0].ErrorContent"/>
+                    </MultiBinding>
+                </TextBlock.Text>
+                    </TextBlock>
+                </WrapPanel>
+                <Label>Sekcja:</Label>
+                <WrapPanel>
+                    <ComboBox Margin="0 0 15 10" Name="ComboBox_Sections"
+                        VerticalAlignment="Top" Width="200" Text="Wybierz sekcje" SelectionChanged="ComboBox_Sections_SelectionChanged"></ComboBox>
+                    <TextBlock Text="&#xD;"/>
+                </WrapPanel>
+                <WrapPanel HorizontalAlignment="Center">
+                    <Button Content="Anuluj" Width="110" Height="60" Margin="5" Padding="10,3,10,3" Command="Close"
+                        Name="button_Close" VerticalAlignment="Top"></Button>
+                    <Button Content="Zapisz" Width="110" Height="60" Margin="5" Padding="10,3,10,3"
+                        Name="button_Save" VerticalAlignment="Top" Click="button_Save_Click">
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="IsEnabled" Value="false" />
+                            <Style.Triggers>
+                                <MultiDataTrigger>
+                                    <MultiDataTrigger.Conditions>
+                                        <Condition Binding="{Binding ElementName=tbAddUser_Id, Path=(Validation.HasError)}" Value="false" />
+                                        <Condition Binding="{Binding ElementName=tbAddUser_Name, Path=(Validation.HasError)}" Value="false" />
+                                        <Condition Binding="{Binding ElementName=tbAddUser_Surname, Path=(Validation.HasError)}" Value="false" />
+                                        <Condition Binding="{Binding ElementName=tbAddUser_Email, Path=(Validation.HasError)}" Value="false" />
+                                        <Condition Binding="{Binding ElementName=tbAddUser_AreaCode, Path=(Validation.HasError)}" Value="false" />
+                                        <Condition Binding="{Binding ElementName=tbAddUser_Phone, Path=(Validation.HasError)}" Value="false" />
+                                        <Condition Binding="{Binding ElementName=tbAddUser_Phone2, Path=(Validation.HasError)}" Value="false" />
+                                    </MultiDataTrigger.Conditions>
+                                    <Setter Property="IsEnabled" Value="true" />
+                                </MultiDataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+                </WrapPanel>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</Window>

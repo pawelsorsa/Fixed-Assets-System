@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF_ZMTdbConnection", "EF_ZMTdbConnection\EF_ZMTdbConnection.csproj", "{D07E2ABB-130B-44B9-A288-1ED549B5CA6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF_ZMTdbEntities", "EF_ZMTdbEntities\EF_ZMTdbEntities.csproj", "{219BB186-3FB5-4D9C-978B-24B7F3029D25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF_ZMTdbContent", "EF_ZMTdbContent\EF_ZMTdbContent.csproj", "{B49B4E38-C1D7-4296-A573-8A9ADCAE63EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D07E2ABB-130B-44B9-A288-1ED549B5CA6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D07E2ABB-130B-44B9-A288-1ED549B5CA6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D07E2ABB-130B-44B9-A288-1ED549B5CA6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D07E2ABB-130B-44B9-A288-1ED549B5CA6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{219BB186-3FB5-4D9C-978B-24B7F3029D25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{219BB186-3FB5-4D9C-978B-24B7F3029D25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{219BB186-3FB5-4D9C-978B-24B7F3029D25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{219BB186-3FB5-4D9C-978B-24B7F3029D25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B49B4E38-C1D7-4296-A573-8A9ADCAE63EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B49B4E38-C1D7-4296-A573-8A9ADCAE63EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B49B4E38-C1D7-4296-A573-8A9ADCAE63EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B49B4E38-C1D7-4296-A573-8A9ADCAE63EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

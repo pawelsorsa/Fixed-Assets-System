@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="4f7c8ec2-5c63-4eb4-9ff1-062f9c26a87a" name="Admin@ADMIN-KOMPUTER 2012-06-04 20:55:35" runUser="Admin-Komputer\Admin" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="4f9f8b0b-8b33-4150-9c2c-ab389c9f2a2a">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Admin_ADMIN-KOMPUTER 2012-06-04 20_55_35">
+      <DeploymentItem filename="C:\Users\Admin\Documents\Visual Studio 2010\Projects\ZMTFixedAssets\EF_ZMTdbEntities\bin\Debug\EF_ZMTdbContent.dll" />
+      <DeploymentItem filename="C:\Users\Admin\Documents\Visual Studio 2010\Projects\EF_ZMTdbConnection\EF_ZMTdbConnection\bin\Debug\EF_ZMTdbConnection.dll" />
+      <DeploymentItem filename="C:\Users\Admin\Documents\Visual Studio 2010\Projects\ZMTFixedAssets\EF_ZMTdbEntities\bin\Debug\EF_ZMT_DbContext.dll" />
+      <DeploymentItem filename="C:\Users\Admin\Documents\Visual Studio 2010\Projects\EF_ZMTdbConnection\EF_ZMTdbEntities\bin\Debug\EF_ZMTdbEntities.dll" />
+      <DeploymentItem filename="C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\ZMTFixedAssetsService\bin\Debug\ZMTFixedAssetsService.dll" />
+      <DeploymentItem filename="C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsTransaction\FixedAssetsTransaction\bin\Debug\FixedAssetsTransactions.dll" />
+      <DeploymentItem filename="C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssets\FixedAssets\bin\Debug\FixedAssets.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-06-04T20:55:35.7932942+02:00" queuing="2012-06-04T20:55:35.9523033+02:00" start="2012-06-04T20:55:36.0213072+02:00" finish="2012-06-04T20:55:37.7214045+02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CanEditSection" storage="c:\users\admin\documents\visual studio 2010\projects\zmtfixedassetsservice\transactionstests\bin\debug\transactionstests.dll" id="554cb4e7-5709-964f-f203-abd173be072b">
+      <Execution id="51f4dea0-3417-45d0-aef6-2431f4756704" />
+      <TestMethod codeBase="C:/Users/Admin/Documents/Visual Studio 2010/Projects/ZMTFixedAssetsService/TransactionsTests/bin/Debug/TransactionsTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TransactionsTests.SectionTransactionsUnitTests, TransactionsTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CanEditSection" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="554cb4e7-5709-964f-f203-abd173be072b" executionId="51f4dea0-3417-45d0-aef6-2431f4756704" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="51f4dea0-3417-45d0-aef6-2431f4756704" testId="554cb4e7-5709-964f-f203-abd173be072b" testName="CanEditSection" computerName="ADMIN-KOMPUTER" duration="00:00:00.9438642" startTime="2012-06-04T20:55:36.0943114+02:00" endTime="2012-06-04T20:55:37.6604010+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="51f4dea0-3417-45d0-aef6-2431f4756704">
+    </UnitTestResult>
+  </Results>
+</TestRun>

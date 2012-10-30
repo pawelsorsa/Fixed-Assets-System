@@ -1,0 +1,50 @@
+﻿<Window x:Class="FixedAssetsApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:uc="clr-namespace:FixedAssetsApp.UserControlls" WindowState="Maximized"
+        Title="PLK ZMT Środki trwałe">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0">
+             <uc:Menu></uc:Menu>
+            <WrapPanel>
+                <WrapPanel Name="log_menu" Width="Auto">
+                    <Label>Login:</Label>
+                    <TextBox Name="tb_Login" Background="#FFEBEBEB" Height="20" Width="120"></TextBox>
+                    <Label>Password:</Label>
+                    <PasswordBox Name="tb_Password" Background="#FFEBEBEB" Height="20" Width="120"></PasswordBox>
+                    <Button Name="btnLogon" Click="btnLogon_Click">Zaloguj</Button>
+                </WrapPanel>
+                <WrapPanel Name="logout_menu">
+                    <TextBlock Name="TextBlock_LoggedAs"></TextBlock>
+                    <Button Style="{DynamicResource NoChromeButton}" Name="btnLogOut" Click="btnLogOut_Click">
+                       Wyloguj
+                    </Button>
+                </WrapPanel>
+            </WrapPanel>
+        </StackPanel>
+        
+        <ScrollViewer BorderThickness="0" VerticalScrollBarVisibility="Auto" Grid.Row="1">
+        <StackPanel Grid.Row="1">
+                <WrapPanel>
+                <Button Name="btnPersons" Click="btnPersons_Click">Pracownicy</Button>
+                <Button Name="btnSections" Click="btnSections_Click">Sekcje</Button>
+                <Button Name="btnDevices" Click="btnDevices_Click">Urządzenia</Button>
+                <Button Name="btnPeripheral" Click="btnPeripheral_Click">Urządzenia peryferyjne</Button>
+                <Button Name="btnSubgroup" Click="btnSubgroup_Click">Podgrupy</Button>
+                <Button Name="btnKinds" Click="btnKinds_Click">Rodzaje</Button>
+                <Button Name="btnLicences" Click="btnLicences_Click">Licencje</Button>
+                <Button Name="btnFixedAssets" Click="btnFixedAssets_Click">Środki trwałe</Button>
+                <Button Name="btnFixedUsers" Click="btnUsers_Click">Użytkownicy</Button>
+                </WrapPanel>
+                <WrapPanel Width="Auto" HorizontalAlignment="Center">
+                    <ContentControl Name="MainContent" />
+                </WrapPanel>
+            </StackPanel>
+        </ScrollViewer>
+   </Grid>
+</Window>

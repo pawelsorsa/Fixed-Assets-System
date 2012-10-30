@@ -1,0 +1,98 @@
+﻿<Window x:Class="FixedAssetsApp.Views.FixedAssetCardView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="FixedAssetCard" Width="800" MaxWidth="800" Height="700">
+    <ScrollViewer>
+    <StackPanel>
+            <StackPanel Name="PrintPanel" Width="Auto">
+                <Label HorizontalAlignment="Center" FontStyle="Italic" FontWeight="Bold" FontSize="25">Karta charakterystyki środka trwałego</Label>
+        <Label FontSize="18" FontStyle="Italic">Informacje ogólne:</Label>
+        <Grid ShowGridLines="True">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label Grid.Column="0" Grid.Row="0">ID:</Label>
+            <Label Grid.Column="1" Grid.Row="0" Name="label_FixedAssetID"></Label>
+
+            <Label Grid.Column="0" Grid.Row="1">Numer inwentarzowy:</Label>
+            <Label Grid.Column="1" Grid.Row="1" Name="label_InventoryNumber"></Label>
+
+            <Label Grid.Column="0" Grid.Row="2">Przypisana osoba:</Label>
+            <Label Grid.Column="1" Grid.Row="2" Name="label_Owner"></Label>
+
+            <Label Grid.Column="0" Grid.Row="3">Data aktywacji:</Label>
+            <Label Grid.Column="1" Grid.Row="3" Name="label_DateOfActivation"></Label>
+
+            <Label Grid.Column="0" Grid.Row="4">Data dezaktywacji:</Label>
+            <Label Grid.Column="1" Grid.Row="4" Name="label_DateOfDesactivation"></Label>
+
+            <Label Grid.Column="0" Grid.Row="5">Numer seryjny:</Label>
+            <Label Grid.Column="1" Grid.Row="5" Name="label_SerialNumber"></Label>
+
+            <Label Grid.Column="0" Grid.Row="6">Pozycja kosztów:</Label>
+            <Label Grid.Column="1" Grid.Row="6" Name="label_MPK"></Label>
+
+            <Label Grid.Column="0" Grid.Row="7">Ilość:</Label>
+            <Label Grid.Column="1" Grid.Row="7" Name="label_Quantity"></Label>
+
+            <Label Grid.Column="0" Grid.Row="8">Lokalizacja:</Label>
+            <Label Grid.Column="1" Grid.Row="8" Name="label_Localization"></Label>
+            
+            <Label Grid.Column="0" Grid.Row="9">Rodzaj:</Label>
+            <Label Grid.Column="1" Grid.Row="9" Name="label_Kind"></Label>
+
+            <Label Grid.Column="0" Grid.Row="10">Podgrupa:</Label>
+            <Label Grid.Column="1" Grid.Row="10" Name="label_Subgroup"></Label>
+
+            <Label Grid.Column="0" Grid.Row="11">Czy do kasacji:</Label>
+            <Label Grid.Column="1" Grid.Row="11" Name="label_Cassation"></Label>
+
+            <Label Grid.Column="0" Grid.Row="12">Komentarz:</Label>
+            <Label Grid.Column="1" Grid.Row="12" Name="label_Comment"></Label>
+        </Grid>
+
+        <Label FontSize="18" FontStyle="Italic">Zainstalowane oprogramowanie:</Label>
+        <DataGrid Name="DataGridLicences" AutoGenerateColumns="False" CanUserReorderColumns="False"
+                  CanUserAddRows="False" CanUserDeleteRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="*" IsReadOnly="True" Header="Nazwa" Binding="{Binding name, Mode=TwoWay}" ></DataGridTextColumn>
+                <DataGridTextColumn Width="Auto" IsReadOnly="True" Header="ID" Binding="{Binding id_number, Mode=TwoWay}"></DataGridTextColumn>
+                <DataGridTextColumn Width="Auto" IsReadOnly="True" Header="Numer inwentarzowy" Binding="{Binding inventory_number, Mode=TwoWay}" ></DataGridTextColumn>
+                <DataGridTextColumn Width="Auto" IsReadOnly="True" Header="Numer licencji" Binding="{Binding licence_number, Mode=TwoWay}" ></DataGridTextColumn> 
+            </DataGrid.Columns>
+        </DataGrid>
+
+            <Label FontSize="18" FontStyle="Italic">Urządzenia peryferyjne:</Label>
+            <DataGrid Name="DataGridDevices" AutoGenerateColumns="False" CanUserReorderColumns="False"
+                  CanUserAddRows="False" CanUserDeleteRows="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Width="Auto" IsReadOnly="True" Header="Id" Binding="{Binding id, Mode=TwoWay}" ></DataGridTextColumn>
+                    <DataGridTextColumn Width="*" IsReadOnly="True" Header="Nazwa" Binding="{Binding name_peripheral_device, Mode=TwoWay}" ></DataGridTextColumn>
+                    <DataGridTextColumn Width="Auto" IsReadOnly="True" Header="Numer Seryjny" Binding="{Binding serial_number, Mode=TwoWay}" ></DataGridTextColumn>
+                    <DataGridTextColumn Width="Auto" IsReadOnly="True" Header="IP" Binding="{Binding ip_address, Mode=TwoWay}" ></DataGridTextColumn>
+                    <DataGridTextColumn Width="Auto" IsReadOnly="True" Header="MAC" Binding="{Binding mac_address, Mode=TwoWay}" ></DataGridTextColumn>
+                    <DataGridTextColumn Width="Auto" IsReadOnly="True" Header="Producent" Binding="{Binding producer, Mode=TwoWay}" ></DataGridTextColumn>
+                    <DataGridTextColumn Width="Auto" IsReadOnly="True" Header="Model" Binding="{Binding model, Mode=TwoWay}" ></DataGridTextColumn>
+                 </DataGrid.Columns>
+            </DataGrid>
+            </StackPanel>
+            <Button Name="printButton" Click="printButton_Click">Drukuj</Button>
+        </StackPanel>
+    </ScrollViewer>
+</Window>

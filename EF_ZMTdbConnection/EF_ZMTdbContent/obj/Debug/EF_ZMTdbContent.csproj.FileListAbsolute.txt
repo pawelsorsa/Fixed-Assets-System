@@ -1,0 +1,7 @@
+c:\users\admin\documents\visual studio 2010\Projects\EF_ZMTdbConnection\EF_ZMTdbContent\obj\Debug\ResolveAssemblyReference.cache
+c:\users\admin\documents\visual studio 2010\Projects\EF_ZMTdbConnection\EF_ZMTdbContent\bin\Debug\EF_ZMTdbContent.dll
+c:\users\admin\documents\visual studio 2010\Projects\EF_ZMTdbConnection\EF_ZMTdbContent\bin\Debug\EF_ZMTdbContent.pdb
+c:\users\admin\documents\visual studio 2010\Projects\EF_ZMTdbConnection\EF_ZMTdbContent\bin\Debug\EF_ZMTdbEntities.dll
+c:\users\admin\documents\visual studio 2010\Projects\EF_ZMTdbConnection\EF_ZMTdbContent\bin\Debug\EF_ZMTdbEntities.pdb
+c:\users\admin\documents\visual studio 2010\Projects\EF_ZMTdbConnection\EF_ZMTdbContent\obj\Debug\EF_ZMTdbContent.dll
+c:\users\admin\documents\visual studio 2010\Projects\EF_ZMTdbConnection\EF_ZMTdbContent\obj\Debug\EF_ZMTdbContent.pdb

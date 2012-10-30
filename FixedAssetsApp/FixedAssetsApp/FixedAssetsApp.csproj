@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5CC659D1-39EC-4677-BB24-A008E6F37B82}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FixedAssetsApp</RootNamespace>
+    <AssemblyName>FixedAssetsApp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Concrete\CloneObject.cs" />
+    <Compile Include="Concrete\FixedAssetMethods.cs" />
+    <Compile Include="Concrete\LicenceMethods.cs" />
+    <Compile Include="Concrete\DeviceMethods.cs" />
+    <Compile Include="Concrete\MembershipUserMethods.cs" />
+    <Compile Include="Concrete\PersonMethods.cs" />
+    <Compile Include="Converters\KindIdToNameConverter.cs" />
+    <Compile Include="Converters\SubgroupIdToNameConverter.cs" />
+    <Compile Include="Converters\PersonIDToNameConverter.cs" />
+    <Compile Include="Converters\ErrorCollectionToVisibilityConverter.cs" />
+    <Compile Include="Concrete\KindMethods.cs" />
+    <Compile Include="Concrete\PeripheralDeviceMethods.cs" />
+    <Compile Include="Concrete\SectionMethods.cs" />
+    <Compile Include="Concrete\SubgroupMethods.cs" />
+    <Compile Include="Converters\FlopBooleanConverter.cs" />
+    <Compile Include="Model\DeviceModel.cs" />
+    <Compile Include="Model\PersonModel.cs" />
+    <Compile Include="Notifier.cs" />
+    <Compile Include="Presenters\AuthenticationPresenter.cs" />
+    <Compile Include="Presenters\UserEditPresenter.cs" />
+    <Compile Include="Presenters\UserPresenter.cs" />
+    <Compile Include="Presenters\LoginInfoPresenter.cs" />
+    <Compile Include="Presenters\FixedAssetCardPresenter.cs" />
+    <Compile Include="Presenters\FixedAssetEditPresenter.cs" />
+    <Compile Include="Presenters\FixedAssetPresenter.cs" />
+    <Compile Include="Presenters\LicenceEditPresenter.cs" />
+    <Compile Include="Presenters\LicencePresenter.cs" />
+    <Compile Include="Presenters\KindEditPresenter.cs" />
+    <Compile Include="Presenters\KindPresenter.cs" />
+    <Compile Include="Presenters\MembershipUserPresenter.cs" />
+    <Compile Include="Presenters\SubgroupEditPresenter.cs" />
+    <Compile Include="Presenters\SubgroupPresenter.cs" />
+    <Compile Include="Presenters\PeripheralDeviceEditPresenter.cs" />
+    <Compile Include="Presenters\DeviceEditPresenter.cs" />
+    <Compile Include="Presenters\DevicePresenter.cs" />
+    <Compile Include="Presenters\PeripheralDevicePresenter.cs" />
+    <Compile Include="Presenters\PersonEditPresenter.cs" />
+    <Compile Include="Presenters\PersonPresenter.cs" />
+    <Compile Include="Presenters\PresenterBase.cs" />
+    <Compile Include="Presenters\SectionEditPresenter.cs" />
+    <Compile Include="Presenters\SectionPresenter.cs" />
+    <Compile Include="Service References\FixedAssetsWebService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlls\ExpandersPerson.xaml.cs">
+      <DependentUpon>ExpandersPerson.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlls\Menu.xaml.cs">
+      <DependentUpon>Menu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Validation\FixedAssetValidationRule.cs" />
+    <Compile Include="Validation\IntegerLengthValidationRule.cs" />
+    <Compile Include="Validation\IntegerRangeValidationRule.cs" />
+    <Compile Include="Validation\RegexValidationRule.cs" />
+    <Compile Include="Validation\StringRangeValidationRule.cs" />
+    <Compile Include="Views\ApplicationView.xaml.cs">
+      <DependentUpon>ApplicationView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AuthenticationView.xaml.cs">
+      <DependentUpon>AuthenticationView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeviceEditView.xaml.cs">
+      <DependentUpon>DeviceEditView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeviceView.xaml.cs">
+      <DependentUpon>DeviceView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FixedAssetCardView.xaml.cs">
+      <DependentUpon>FixedAssetCardView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FixedAssetEditView.xaml.cs">
+      <DependentUpon>FixedAssetEditView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FixedAssetView.xaml.cs">
+      <DependentUpon>FixedAssetView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\KindEditView.xaml.cs">
+      <DependentUpon>KindEditView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\KindView.xaml.cs">
+      <DependentUpon>KindView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LicenceEditView.xaml.cs">
+      <DependentUpon>LicenceEditView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LicenceView.xaml.cs">
+      <DependentUpon>LicenceView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LoginInfoView.xaml.cs">
+      <DependentUpon>LoginInfoView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PeripheralDeviceEditView.xaml.cs">
+      <DependentUpon>PeripheralDeviceEditView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PeripheralDeviceView.xaml.cs">
+      <DependentUpon>PeripheralDeviceView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PersonEditView.xaml.cs">
+      <DependentUpon>PersonEditView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PersonView.xaml.cs">
+      <DependentUpon>PersonView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SectionEditView.xaml.cs">
+      <DependentUpon>SectionEditView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SectionView.xaml.cs">
+      <DependentUpon>SectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SubgroupEditView.xaml.cs">
+      <DependentUpon>SubgroupEditView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SubgroupView.xaml.cs">
+      <DependentUpon>SubgroupView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserEditView.xaml.cs">
+      <DependentUpon>UserEditView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserView.xaml.cs">
+      <DependentUpon>UserView.xaml</DependentUpon>
+    </Compile>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="UserControlls\ExpandersPerson.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlls\Menu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ApplicationView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AuthenticationView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DeviceEditView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DeviceView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FixedAssetCardView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FixedAssetEditView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FixedAssetView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\KindEditView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\KindView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\LicenceEditView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\LicenceView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\LoginInfoView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PeripheralDeviceEditView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PeripheralDeviceView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PersonEditView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PersonView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SectionEditView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SectionView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SubgroupEditView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SubgroupView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserEditView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <None Include="Service References\FixedAssetsWebService\Arrays.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\FixedAssetsWebService\EF_ZMTdbEntities.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\FixedAssetsWebService\FixedAssetsApp.FixedAssetsWebService.Contractor.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FixedAssetsWebService\FixedAssetsApp.FixedAssetsWebService.Device.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FixedAssetsWebService\FixedAssetsApp.FixedAssetsWebService.FixedAsset.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FixedAssetsWebService\FixedAssetsApp.FixedAssetsWebService.Kind.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FixedAssetsWebService\FixedAssetsApp.FixedAssetsWebService.Licence.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FixedAssetsWebService\FixedAssetsApp.FixedAssetsWebService.MembershipRole.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FixedAssetsWebService\FixedAssetsApp.FixedAssetsWebService.MembershipUser.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FixedAssetsWebService\FixedAssetsApp.FixedAssetsWebService.PeripheralDevice.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FixedAssetsWebService\FixedAssetsApp.FixedAssetsWebService.Person.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FixedAssetsWebService\FixedAssetsApp.FixedAssetsWebService.Section.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FixedAssetsWebService\FixedAssetsApp.FixedAssetsWebService.Subgroup.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FixedAssetsWebService\service.wsdl" />
+    <None Include="Service References\FixedAssetsWebService\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\FixedAssetsWebService\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\FixedAssetsWebService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\FixedAssetsWebService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\FixedAssetsWebService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\FixedAssetsWebService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

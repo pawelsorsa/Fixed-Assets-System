@@ -1,0 +1,63 @@
+﻿<UserControl x:Class="FixedAssetsApp.UserControlls.ExpandersPerson"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:c="clr-namespace:FixedAssetsApp.FixedAssetsWebService"
+             xmlns:validators="clr-namespace:FixedAssetsApp.Validation"
+             mc:Ignorable="d" >
+    <UserControl.Resources>
+        <ObjectDataProvider x:Key="Person" ObjectType="{x:Type c:Person}"/>
+    </UserControl.Resources>
+    <WrapPanel>
+     <WrapPanel>
+        <Button Name="showAllPersons" Click="btnShowPersons_Click">Wyświetl wszystkich pracowników</Button>
+        <Button Name="showPersonsWithPhone" Click="btnShowPersons_Click">Numery telefonów</Button>
+        <Button Name="showPersonsWithEmail" Click="btnShowPersons_Click">Adresy e-mail</Button>
+    </WrapPanel>
+    <WrapPanel>
+    <Expander Header="Wyszukiwanie zaawansowane">
+        <StackPanel Name="expanderSearch" Margin="10,4,0,0">
+            <Label>ID:</Label>
+            <WrapPanel>
+                <TextBox Name="tbId" Width="120" Margin="0 0 15 0"></TextBox>
+                <Button Name="btnGetById" Click="btnExpanderSearchClick">Wyszukaj</Button>
+            </WrapPanel>
+            <Label>Imię:</Label>
+            <WrapPanel>
+                <TextBox Name="tbName" Width="120" Margin="0 0 15 0"></TextBox>
+                <Button Name="btnGetByName" Click="btnExpanderSearchClick">Wyszukaj</Button>
+            </WrapPanel>
+            <Label>Nazwisko:</Label>
+            <WrapPanel>
+                <TextBox Name="tbSurname" Width="120" Margin="0 0 15 0"></TextBox>
+                <Button Name="btnGetBySurname" Click="btnExpanderSearchClick">Wyszukaj</Button>
+            </WrapPanel>
+            <Label>Imię i nazwisko:</Label>
+            <WrapPanel>
+                <TextBox Name="tbName_Surname" Width="120" Margin="0 0 15 0"></TextBox>
+                <Button Name="btnGetByNameAndSurname" Click="btnExpanderSearchClick">Wyszukaj</Button>
+            </WrapPanel>
+            <Label>Telefon:</Label>
+            <WrapPanel>
+                <TextBox Name="tbPhone" Width="120" Margin="0 0 15 0"></TextBox>
+                <Button Name="btnGetByPhone" Click="btnExpanderSearchClick">Wyszukaj</Button>
+            </WrapPanel>
+            <Label>Email:</Label>
+            <WrapPanel>
+                <TextBox Name="tbEmail" Width="120" Margin="0 0 15 0"></TextBox>
+                <Button Name="btnGetByEmail" Click="btnExpanderSearchClick">Wyszukaj</Button>
+            </WrapPanel>
+            <Label>Sekcja:</Label>
+            <WrapPanel>
+                <ComboBox Margin="0 0 15 0" Name="cbSections" HorizontalAlignment="Left"
+                        VerticalAlignment="Top" Width="120" Text="Wybierz sekcje"></ComboBox>
+                <Button Name="btnGetBySekcja" Click="btnExpanderSearchClick">Wyszukaj</Button>
+            </WrapPanel>
+            <TextBlock Text="&#xD;"/>
+            <TextBlock Text="&#xD;"/>
+        </StackPanel>
+    </Expander>
+    </WrapPanel>
+    </WrapPanel>
+</UserControl>

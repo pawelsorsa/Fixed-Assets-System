@@ -1,0 +1,173 @@
+﻿<Window x:Class="FixedAssetsApp.Views.DeviceEditView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:validators="clr-namespace:FixedAssetsApp.Validation" KeyDown="Window_KeyDown"
+             xmlns:collectionVisiblity="clr-namespace:FixedAssetsApp.Converters" WindowStartupLocation="CenterScreen"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Window.Resources>
+        <collectionVisiblity:ErrorCollectionToVisibilityConverter x:Key="ToVisibility" />
+        <Style TargetType="TextBlock">
+            <Setter Property="Foreground" Value="Red" />
+        </Style>
+    </Window.Resources>
+    <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.Close" 
+                        Executed="CloseCommandHandler"/>
+    </Window.CommandBindings>
+    <ScrollViewer>
+        <StackPanel Margin="10,4,0,0">
+            <Label Name="Label_AddOrEditDevice" FontFamily="Arial" FontSize="22" FontStyle="Italic" HorizontalAlignment="Center"></Label>
+
+            <Label>Rodzaj:</Label>
+            <ComboBox Margin="0 0 15 10" Name="ComboBox_Devies" Width="Auto" SelectionChanged="ComboBox_Devies_SelectionChanged"
+                      VerticalAlignment="Top" Text="Wybierz rodzaj urządzenia"></ComboBox>
+
+            <Label>Numer Seryjny:</Label>
+            <TextBox Name="tbAddDevice_SerialNumber" Margin="0 0 15 10">
+                <Binding Path="serial_number" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                    <Binding.ValidationRules>
+                        <validators:StringRangeValidationRule ValidatesOnTargetUpdated="True" Empty="True"
+                                        MinimumLength="1" MaximumLength="255"
+                                        ErrorMessage="Pole numer seryjny nie może być puste. Maksymalna długość 255 znaków." />
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox>
+            <Label>Adres IP:</Label>
+            <TextBox Name="tbAddDevice_IPAddress" Margin="0 0 15 10">
+                <Binding Path="ip_address" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                    <Binding.ValidationRules>
+                        <validators:RegexValidationRule ValidatesOnTargetUpdated="True" Empty="True"
+                                        ErrorMessage="Podany adres email ma nieprawidłowy format." TypeRegax="ipaddress"   />
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox>
+            <Label>Adres MAC:</Label>
+            <TextBox Name="tbAddDevice_MAC" Margin="0 0 15 10">
+                <Binding Path="mac_address" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                    <Binding.ValidationRules>
+                        <validators:StringRangeValidationRule ValidatesOnTargetUpdated="True"
+                                        MinimumLength="12" MaximumLength="12" Empty="True"
+                                        ErrorMessage="Pole adres MAC powinno zawierać 12 znaków" />
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox>
+
+            <Label>Producent:</Label>
+            <TextBox Name="tbAddDevice_Producer" Margin="0 0 15 10">
+                <Binding Path="producer" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                    <Binding.ValidationRules>
+                        <validators:StringRangeValidationRule ValidatesOnTargetUpdated="True"
+                                        MinimumLength="2" MaximumLength="100" Empty="True"
+                                        ErrorMessage="Pole producent powinno zawierać od 2 do 100 znaków" />
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox>
+
+            <Label>Model:</Label>
+            <TextBox Name="tbAddDevice_Model" Margin="0 0 15 10">
+                <Binding Path="model" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                    <Binding.ValidationRules>
+                        <validators:StringRangeValidationRule ValidatesOnTargetUpdated="True"
+                                        MinimumLength="2" MaximumLength="100" Empty="True"
+                                        ErrorMessage="Pole model powinno zawierać od 2 do 100 znaków" />
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox>
+
+            <Label>ID środka trwałego:</Label>
+            <TextBox Name="tbAddDevice_ID_FixedAsset" Margin="0 0 15 10">
+                <Binding Path="id_fixed_asset" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                    <Binding.ValidationRules>
+                        <validators:FixedAssetValidationRule ValidatesOnTargetUpdated="True"
+                                        Minimum="9" Maximum="9" Empty="False"
+                                        ErrorMessage="Pole ID środek trwały powinno zawierać 9 znaków"/>
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox>
+
+            <Label>Komentarz:</Label>
+            <TextBox Name="tbAddDevice_Comment" Margin="0 0 15 10" MinHeight="200">
+                <Binding Path="comment" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay"></Binding>
+            </TextBox>
+
+            <StackPanel>
+                <TextBlock Visibility="{Binding ElementName=tbAddDevice_SerialNumber, Path=(Validation.Errors), Converter={StaticResource ToVisibility}}">
+                <TextBlock.Text>
+                    <MultiBinding StringFormat=" {0}">
+                        <Binding ElementName="tbAddDevice_SerialNumber" Path="(Validation.Errors)[0].ErrorContent"/>
+                    </MultiBinding>
+                </TextBlock.Text>
+                </TextBlock>
+
+                <TextBlock Visibility="{Binding ElementName=tbAddDevice_IPAddress, Path=(Validation.Errors), Converter={StaticResource ToVisibility}}">
+                <TextBlock.Text>
+                    <MultiBinding StringFormat=" {0}">
+                        <Binding ElementName="tbAddDevice_IPAddress" Path="(Validation.Errors)[0].ErrorContent"/>
+                    </MultiBinding>
+                </TextBlock.Text>
+                </TextBlock>
+
+                <TextBlock Visibility="{Binding ElementName=tbAddDevice_MAC, Path=(Validation.Errors), Converter={StaticResource ToVisibility}}">
+                <TextBlock.Text>
+                    <MultiBinding StringFormat=" {0}">
+                        <Binding ElementName="tbAddDevice_MAC" Path="(Validation.Errors)[0].ErrorContent"/>
+                    </MultiBinding>
+                </TextBlock.Text>
+                </TextBlock>
+
+                <TextBlock Visibility="{Binding ElementName=tbAddDevice_Producer, Path=(Validation.Errors), Converter={StaticResource ToVisibility}}">
+                <TextBlock.Text>
+                    <MultiBinding StringFormat=" {0}">
+                        <Binding ElementName="tbAddDevice_Producer" Path="(Validation.Errors)[0].ErrorContent"/>
+                    </MultiBinding>
+                </TextBlock.Text>
+                </TextBlock>
+
+                <TextBlock Visibility="{Binding ElementName=tbAddDevice_Model, Path=(Validation.Errors), Converter={StaticResource ToVisibility}}">
+                <TextBlock.Text>
+                    <MultiBinding StringFormat=" {0}">
+                        <Binding ElementName="tbAddDevice_Model" Path="(Validation.Errors)[0].ErrorContent"/>
+                    </MultiBinding>
+                </TextBlock.Text>
+                </TextBlock>
+
+                <TextBlock Visibility="{Binding ElementName=tbAddDevice_ID_FixedAsset, Path=(Validation.Errors), Converter={StaticResource ToVisibility}}">
+                <TextBlock.Text>
+                    <MultiBinding StringFormat=" {0}">
+                        <Binding ElementName="tbAddDevice_ID_FixedAsset" Path="(Validation.Errors)[0].ErrorContent"/>
+                    </MultiBinding>
+                </TextBlock.Text>
+                </TextBlock>
+            </StackPanel>
+
+            <WrapPanel HorizontalAlignment="Center" Margin="10,35,10,10">
+                <Button Content="Anuluj" Width="110" Height="60" Margin="5" Padding="10,3,10,3" Command="Close"
+                        Name="button_Close" VerticalAlignment="Top"></Button>
+                <Button Content="Zapisz" Width="110" Height="60" Margin="5" Padding="10,3,10,3"
+                        Name="button_Save" VerticalAlignment="Top" Click="button_Save_Click">
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="IsEnabled" Value="false" />
+                            <Style.Triggers>
+                                <MultiDataTrigger>
+                                    <MultiDataTrigger.Conditions>
+                                        <Condition Binding="{Binding ElementName=tbAddDevice_SerialNumber, Path=(Validation.HasError)}" Value="false" />
+                                        <Condition Binding="{Binding ElementName=tbAddDevice_IPAddress, Path=(Validation.HasError)}" Value="false" />
+                                        <Condition Binding="{Binding ElementName=tbAddDevice_MAC, Path=(Validation.HasError)}" Value="false" />
+                                        <Condition Binding="{Binding ElementName=tbAddDevice_Producer, Path=(Validation.HasError)}" Value="false" />
+                                        <Condition Binding="{Binding ElementName=tbAddDevice_Model, Path=(Validation.HasError)}" Value="false" />
+                                        <Condition Binding="{Binding ElementName=tbAddDevice_ID_FixedAsset, Path=(Validation.HasError)}" Value="false" />
+                                    </MultiDataTrigger.Conditions>
+                                    <Setter Property="IsEnabled" Value="true" />
+                                </MultiDataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+            </WrapPanel>
+        </StackPanel>
+        </ScrollViewer>
+</Window>

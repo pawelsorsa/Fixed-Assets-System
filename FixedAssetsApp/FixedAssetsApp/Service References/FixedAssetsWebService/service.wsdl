@@ -1,0 +1,2970 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="FixedAssetService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="ContractorBinding_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1">
+        </msb:BinaryEncoding>
+        <wsaw:UsingAddressing>
+        </wsaw:UsingAddressing>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="DeviceBinding_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1">
+        </msb:BinaryEncoding>
+        <wsaw:UsingAddressing>
+        </wsaw:UsingAddressing>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="FixedAssetBinding_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1">
+        </msb:BinaryEncoding>
+        <wsaw:UsingAddressing>
+        </wsaw:UsingAddressing>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="KindBinding_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1">
+        </msb:BinaryEncoding>
+        <wsaw:UsingAddressing>
+        </wsaw:UsingAddressing>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="LicenceBinding_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1">
+        </msb:BinaryEncoding>
+        <wsaw:UsingAddressing>
+        </wsaw:UsingAddressing>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="MembershipRoleBinding_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1">
+        </msb:BinaryEncoding>
+        <wsaw:UsingAddressing>
+        </wsaw:UsingAddressing>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="MembershipUserBinding_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1">
+        </msb:BinaryEncoding>
+        <wsaw:UsingAddressing>
+        </wsaw:UsingAddressing>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="PeripheralDeviceBinding_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1">
+        </msb:BinaryEncoding>
+        <wsaw:UsingAddressing>
+        </wsaw:UsingAddressing>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="PersonBinding_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1">
+        </msb:BinaryEncoding>
+        <wsaw:UsingAddressing>
+        </wsaw:UsingAddressing>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="SectionBinding_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1">
+        </msb:BinaryEncoding>
+        <wsaw:UsingAddressing>
+        </wsaw:UsingAddressing>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="SubgroupBinding_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1">
+        </msb:BinaryEncoding>
+        <wsaw:UsingAddressing>
+        </wsaw:UsingAddressing>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="ContractorBinding1_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1">
+        </msb:BinaryEncoding>
+        <wsaw:UsingAddressing>
+        </wsaw:UsingAddressing>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="DeviceBinding1_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1">
+        </msb:BinaryEncoding>
+        <wsaw:UsingAddressing>
+        </wsaw:UsingAddressing>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="FixedAssetBinding1_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1">
+        </msb:BinaryEncoding>
+        <wsaw:UsingAddressing>
+        </wsaw:UsingAddressing>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="KindBinding1_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1">
+        </msb:BinaryEncoding>
+        <wsaw:UsingAddressing>
+        </wsaw:UsingAddressing>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="LicenceBinding1_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1">
+        </msb:BinaryEncoding>
+        <wsaw:UsingAddressing>
+        </wsaw:UsingAddressing>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="MembershipRoleBinding1_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1">
+        </msb:BinaryEncoding>
+        <wsaw:UsingAddressing>
+        </wsaw:UsingAddressing>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="MembershipUserBinding1_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1">
+        </msb:BinaryEncoding>
+        <wsaw:UsingAddressing>
+        </wsaw:UsingAddressing>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="PeripheralDeviceBinding1_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1">
+        </msb:BinaryEncoding>
+        <wsaw:UsingAddressing>
+        </wsaw:UsingAddressing>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="PersonBinding1_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1">
+        </msb:BinaryEncoding>
+        <wsaw:UsingAddressing>
+        </wsaw:UsingAddressing>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="SectionBinding1_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1">
+        </msb:BinaryEncoding>
+        <wsaw:UsingAddressing>
+        </wsaw:UsingAddressing>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="SubgroupBinding1_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1">
+        </msb:BinaryEncoding>
+        <wsaw:UsingAddressing>
+        </wsaw:UsingAddressing>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/EF_ZMTdbEntities" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IContractorService_CountContractors_InputMessage">
+    <wsdl:part name="parameters" element="tns:CountContractors" />
+  </wsdl:message>
+  <wsdl:message name="IContractorService_CountContractors_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CountContractorsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IContractorService_GetAllContractors_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllContractors" />
+  </wsdl:message>
+  <wsdl:message name="IContractorService_GetAllContractors_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllContractorsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IContractorService_GetContractorById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetContractorById" />
+  </wsdl:message>
+  <wsdl:message name="IContractorService_GetContractorById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetContractorByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IContractorService_GetContractorByNip_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetContractorByNip" />
+  </wsdl:message>
+  <wsdl:message name="IContractorService_GetContractorByNip_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetContractorByNipResponse" />
+  </wsdl:message>
+  <wsdl:message name="IContractorService_GetContractorsByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetContractorsByName" />
+  </wsdl:message>
+  <wsdl:message name="IContractorService_GetContractorsByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetContractorsByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IContractorService_GetContractorByAccountNumber_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetContractorByAccountNumber" />
+  </wsdl:message>
+  <wsdl:message name="IContractorService_GetContractorByAccountNumber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetContractorByAccountNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="IContractorService_GetContractorsByStreet_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetContractorsByStreet" />
+  </wsdl:message>
+  <wsdl:message name="IContractorService_GetContractorsByStreet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetContractorsByStreetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IContractorService_GetContractorsByCity_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetContractorsByCity" />
+  </wsdl:message>
+  <wsdl:message name="IContractorService_GetContractorsByCity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetContractorsByCityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IContractorService_GetContractorsByCountry_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetContractorsByCountry" />
+  </wsdl:message>
+  <wsdl:message name="IContractorService_GetContractorsByCountry_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetContractorsByCountryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IContractorService_GetContractorsByPostalCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetContractorsByPostalCode" />
+  </wsdl:message>
+  <wsdl:message name="IContractorService_GetContractorsByPostalCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetContractorsByPostalCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceService_CountDevices_InputMessage">
+    <wsdl:part name="parameters" element="tns:CountDevices" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceService_CountDevices_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CountDevicesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceService_GetAllDevices_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllDevices" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceService_GetAllDevices_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllDevicesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceService_GetDeviceById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeviceById" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceService_GetDeviceById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeviceByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceService_GetDevicesByPheripheralDeviceId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDevicesByPheripheralDeviceId" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceService_GetDevicesByPheripheralDeviceId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDevicesByPheripheralDeviceIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceService_GetDevicesBySerialNumber_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDevicesBySerialNumber" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceService_GetDevicesBySerialNumber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDevicesBySerialNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceService_GetDevicesByIpAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDevicesByIpAddress" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceService_GetDevicesByIpAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDevicesByIpAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceService_GetDeviceByMacAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeviceByMacAddress" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceService_GetDeviceByMacAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeviceByMacAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceService_GetDevicesByProducer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDevicesByProducer" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceService_GetDevicesByProducer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDevicesByProducerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceService_GetDevicesByModel_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDevicesByModel" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceService_GetDevicesByModel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDevicesByModelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceService_GetDevicesByFixedAssetId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDevicesByFixedAssetId" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceService_GetDevicesByFixedAssetId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDevicesByFixedAssetIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetService_CountFixedAssets_InputMessage">
+    <wsdl:part name="parameters" element="tns:CountFixedAssets" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetService_CountFixedAssets_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CountFixedAssetsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetService_GetAllFixedAssets_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllFixedAssets" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetService_GetAllFixedAssets_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllFixedAssetsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetService_GetFixedAssetById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFixedAssetById" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetService_GetFixedAssetById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFixedAssetByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetService_GetFixedAssetByInventoryNumber_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFixedAssetByInventoryNumber" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetService_GetFixedAssetByInventoryNumber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFixedAssetByInventoryNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetService_GetFixedAssetsByPersonId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFixedAssetsByPersonId" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetService_GetFixedAssetsByPersonId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFixedAssetsByPersonIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetService_GetFixedAssetsByActivationDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFixedAssetsByActivationDate" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetService_GetFixedAssetsByActivationDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFixedAssetsByActivationDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetService_GetFixedAssetsByRangeActivationDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFixedAssetsByRangeActivationDate" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetService_GetFixedAssetsByRangeActivationDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFixedAssetsByRangeActivationDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetService_GetFixedAssetBySerialNumber_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFixedAssetBySerialNumber" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetService_GetFixedAssetBySerialNumber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFixedAssetBySerialNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetService_GetFixedAssetsByMPK_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFixedAssetsByMPK" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetService_GetFixedAssetsByMPK_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFixedAssetsByMPKResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetService_GetFixedAssetsByLocalization_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFixedAssetsByLocalization" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetService_GetFixedAssetsByLocalization_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFixedAssetsByLocalizationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetService_GetFixedAssetsByKindId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFixedAssetsByKindId" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetService_GetFixedAssetsByKindId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFixedAssetsByKindIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetService_GetFixedAssetsBySubgroupId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFixedAssetsBySubgroupId" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetService_GetFixedAssetsBySubgroupId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFixedAssetsBySubgroupIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetService_GetFixedAssetsByLastModifiedDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFixedAssetsByLastModifiedDate" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetService_GetFixedAssetsByLastModifiedDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFixedAssetsByLastModifiedDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetService_GetFixedAssetsByRangeLastModifiedDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFixedAssetsByRangeLastModifiedDate" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetService_GetFixedAssetsByRangeLastModifiedDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFixedAssetsByRangeLastModifiedDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetService_GetFixedAssetsByLastModifiedId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFixedAssetsByLastModifiedId" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetService_GetFixedAssetsByLastModifiedId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFixedAssetsByLastModifiedIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetService_GetFixedAssetsToCassation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFixedAssetsToCassation" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetService_GetFixedAssetsToCassation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFixedAssetsToCassationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetService_GetFixedAssetsByCreator_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFixedAssetsByCreator" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetService_GetFixedAssetsByCreator_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFixedAssetsByCreatorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetService_GetFixedAssetsByContractor_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFixedAssetsByContractor" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetService_GetFixedAssetsByContractor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFixedAssetsByContractorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKindService_CountKinds_InputMessage">
+    <wsdl:part name="parameters" element="tns:CountKinds" />
+  </wsdl:message>
+  <wsdl:message name="IKindService_CountKinds_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CountKindsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKindService_GetKindById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetKindById" />
+  </wsdl:message>
+  <wsdl:message name="IKindService_GetKindById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetKindByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKindService_GetKindByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetKindByName" />
+  </wsdl:message>
+  <wsdl:message name="IKindService_GetKindByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetKindByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKindService_GetAllKinds_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllKinds" />
+  </wsdl:message>
+  <wsdl:message name="IKindService_GetAllKinds_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllKindsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenceService_CountLicences_InputMessage">
+    <wsdl:part name="parameters" element="tns:CountLicences" />
+  </wsdl:message>
+  <wsdl:message name="ILicenceService_CountLicences_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CountLicencesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenceService_GetAllLicences_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllLicences" />
+  </wsdl:message>
+  <wsdl:message name="ILicenceService_GetAllLicences_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllLicencesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenceService_GetLicenceById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicenceById" />
+  </wsdl:message>
+  <wsdl:message name="ILicenceService_GetLicenceById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicenceByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenceService_GetLicenceByInventoryNumber_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicenceByInventoryNumber" />
+  </wsdl:message>
+  <wsdl:message name="ILicenceService_GetLicenceByInventoryNumber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicenceByInventoryNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenceService_GetLicencesByFixedAssetId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicencesByFixedAssetId" />
+  </wsdl:message>
+  <wsdl:message name="ILicenceService_GetLicencesByFixedAssetId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicencesByFixedAssetIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenceService_GetLicencesByLicenceNumber_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicencesByLicenceNumber" />
+  </wsdl:message>
+  <wsdl:message name="ILicenceService_GetLicencesByLicenceNumber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicencesByLicenceNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenceService_GetLicencesByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicencesByName" />
+  </wsdl:message>
+  <wsdl:message name="ILicenceService_GetLicencesByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicencesByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenceService_GetLicenceByCreator_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicenceByCreator" />
+  </wsdl:message>
+  <wsdl:message name="ILicenceService_GetLicenceByCreator_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicenceByCreatorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenceService_GetLicencesByLastModifiedDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicencesByLastModifiedDate" />
+  </wsdl:message>
+  <wsdl:message name="ILicenceService_GetLicencesByLastModifiedDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicencesByLastModifiedDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenceService_GetLicencesByRangeLastModifiedDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicencesByRangeLastModifiedDate" />
+  </wsdl:message>
+  <wsdl:message name="ILicenceService_GetLicencesByRangeLastModifiedDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicencesByRangeLastModifiedDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenceService_GetLicencesByLastModifiedMembershipUserLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicencesByLastModifiedMembershipUserLogin" />
+  </wsdl:message>
+  <wsdl:message name="ILicenceService_GetLicencesByLastModifiedMembershipUserLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicencesByLastModifiedMembershipUserLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMembershipRoleService_GetAllRoles_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllRoles" />
+  </wsdl:message>
+  <wsdl:message name="IMembershipRoleService_GetAllRoles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllRolesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMembershipRoleService_GetRoleById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoleById" />
+  </wsdl:message>
+  <wsdl:message name="IMembershipRoleService_GetRoleById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoleByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMembershipRoleService_GetRoleByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoleByName" />
+  </wsdl:message>
+  <wsdl:message name="IMembershipRoleService_GetRoleByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoleByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMembershipUserService_IsUserInRole_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsUserInRole" />
+  </wsdl:message>
+  <wsdl:message name="IMembershipUserService_IsUserInRole_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsUserInRoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMembershipUserService_IsUserActive_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsUserActive" />
+  </wsdl:message>
+  <wsdl:message name="IMembershipUserService_IsUserActive_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsUserActiveResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMembershipUserService_IsUserOnline_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsUserOnline" />
+  </wsdl:message>
+  <wsdl:message name="IMembershipUserService_IsUserOnline_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsUserOnlineResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMembershipUserService_GetAllUsers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllUsers" />
+  </wsdl:message>
+  <wsdl:message name="IMembershipUserService_GetAllUsers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMembershipUserService_GetOnlineUsers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOnlineUsers" />
+  </wsdl:message>
+  <wsdl:message name="IMembershipUserService_GetOnlineUsers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOnlineUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMembershipUserService_GetActiveUsers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetActiveUsers" />
+  </wsdl:message>
+  <wsdl:message name="IMembershipUserService_GetActiveUsers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetActiveUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMembershipUserService_GetNonActiveUsers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNonActiveUsers" />
+  </wsdl:message>
+  <wsdl:message name="IMembershipUserService_GetNonActiveUsers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNonActiveUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMembershipUserService_GetUserByLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserByLogin" />
+  </wsdl:message>
+  <wsdl:message name="IMembershipUserService_GetUserByLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserByLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMembershipUserService_GetUserByEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserByEmail" />
+  </wsdl:message>
+  <wsdl:message name="IMembershipUserService_GetUserByEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserByEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPeripheralDeviceService_CountPeripheralDevices_InputMessage">
+    <wsdl:part name="parameters" element="tns:CountPeripheralDevices" />
+  </wsdl:message>
+  <wsdl:message name="IPeripheralDeviceService_CountPeripheralDevices_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CountPeripheralDevicesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPeripheralDeviceService_GetAllPeripheralDevices_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPeripheralDevices" />
+  </wsdl:message>
+  <wsdl:message name="IPeripheralDeviceService_GetAllPeripheralDevices_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPeripheralDevicesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPeripheralDeviceService_GetPeripheralDeviceById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPeripheralDeviceById" />
+  </wsdl:message>
+  <wsdl:message name="IPeripheralDeviceService_GetPeripheralDeviceById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPeripheralDeviceByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPeripheralDeviceService_GetPeripheralDeviceByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPeripheralDeviceByName" />
+  </wsdl:message>
+  <wsdl:message name="IPeripheralDeviceService_GetPeripheralDeviceByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPeripheralDeviceByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPersonService_CountPersons_InputMessage">
+    <wsdl:part name="parameters" element="tns:CountPersons" />
+  </wsdl:message>
+  <wsdl:message name="IPersonService_CountPersons_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CountPersonsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPersonService_GetAllPersons_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPersons" />
+  </wsdl:message>
+  <wsdl:message name="IPersonService_GetAllPersons_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPersonsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPersonService_GetPersonById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPersonById" />
+  </wsdl:message>
+  <wsdl:message name="IPersonService_GetPersonById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPersonByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPersonService_GetPersonsByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPersonsByName" />
+  </wsdl:message>
+  <wsdl:message name="IPersonService_GetPersonsByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPersonsByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPersonService_GetPersonsBySurname_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPersonsBySurname" />
+  </wsdl:message>
+  <wsdl:message name="IPersonService_GetPersonsBySurname_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPersonsBySurnameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPersonService_GetPersonsByNameAndSurname_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPersonsByNameAndSurname" />
+  </wsdl:message>
+  <wsdl:message name="IPersonService_GetPersonsByNameAndSurname_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPersonsByNameAndSurnameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPersonService_GetPersonByEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPersonByEmail" />
+  </wsdl:message>
+  <wsdl:message name="IPersonService_GetPersonByEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPersonByEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPersonService_GetPersonByPhone_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPersonByPhone" />
+  </wsdl:message>
+  <wsdl:message name="IPersonService_GetPersonByPhone_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPersonByPhoneResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPersonService_GetPersonsWithEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPersonsWithEmail" />
+  </wsdl:message>
+  <wsdl:message name="IPersonService_GetPersonsWithEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPersonsWithEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPersonService_GetPersonsWithComPhone_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPersonsWithComPhone" />
+  </wsdl:message>
+  <wsdl:message name="IPersonService_GetPersonsWithComPhone_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPersonsWithComPhoneResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPersonService_GetPersonsBySection_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPersonsBySection" />
+  </wsdl:message>
+  <wsdl:message name="IPersonService_GetPersonsBySection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPersonsBySectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISectionService_CountSections_InputMessage">
+    <wsdl:part name="parameters" element="tns:CountSections" />
+  </wsdl:message>
+  <wsdl:message name="ISectionService_CountSections_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CountSectionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISectionService_GetAllSections_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllSections" />
+  </wsdl:message>
+  <wsdl:message name="ISectionService_GetAllSections_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllSectionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISectionService_GetSectionById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSectionById" />
+  </wsdl:message>
+  <wsdl:message name="ISectionService_GetSectionById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSectionByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISectionService_GetSectionByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSectionByName" />
+  </wsdl:message>
+  <wsdl:message name="ISectionService_GetSectionByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSectionByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISectionService_GetSectionByShortName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSectionByShortName" />
+  </wsdl:message>
+  <wsdl:message name="ISectionService_GetSectionByShortName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSectionByShortNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISectionService_GetSectionsByPostalCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSectionsByPostalCode" />
+  </wsdl:message>
+  <wsdl:message name="ISectionService_GetSectionsByPostalCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSectionsByPostalCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISectionService_GetSectionsByPost_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSectionsByPost" />
+  </wsdl:message>
+  <wsdl:message name="ISectionService_GetSectionsByPost_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSectionsByPostResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISectionService_GetSectionsByLocality_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSectionsByLocality" />
+  </wsdl:message>
+  <wsdl:message name="ISectionService_GetSectionsByLocality_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSectionsByLocalityResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISectionService_GetSectionByPhoneNumber_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSectionByPhoneNumber" />
+  </wsdl:message>
+  <wsdl:message name="ISectionService_GetSectionByPhoneNumber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSectionByPhoneNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISectionService_GetSectionByEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSectionByEmail" />
+  </wsdl:message>
+  <wsdl:message name="ISectionService_GetSectionByEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSectionByEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISectionService_GetSectionsByStreet_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSectionsByStreet" />
+  </wsdl:message>
+  <wsdl:message name="ISectionService_GetSectionsByStreet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSectionsByStreetResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISubgroupService_CountSubgroups_InputMessage">
+    <wsdl:part name="parameters" element="tns:CountSubgroups" />
+  </wsdl:message>
+  <wsdl:message name="ISubgroupService_CountSubgroups_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CountSubgroupsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISubgroupService_GetAllSubgroups_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllSubgroups" />
+  </wsdl:message>
+  <wsdl:message name="ISubgroupService_GetAllSubgroups_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllSubgroupsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISubgroupService_GetSubgroupById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubgroupById" />
+  </wsdl:message>
+  <wsdl:message name="ISubgroupService_GetSubgroupById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubgroupByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISubgroupService_GetSubgroupByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubgroupByName" />
+  </wsdl:message>
+  <wsdl:message name="ISubgroupService_GetSubgroupByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubgroupByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISubgroupService_GetSubgroupByShortName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubgroupByShortName" />
+  </wsdl:message>
+  <wsdl:message name="ISubgroupService_GetSubgroupByShortName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubgroupByShortNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IContractorTransactions_AddContractor_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddContractor" />
+  </wsdl:message>
+  <wsdl:message name="IContractorTransactions_AddContractor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddContractorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IContractorTransactions_EditContractor_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditContractor" />
+  </wsdl:message>
+  <wsdl:message name="IContractorTransactions_EditContractor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditContractorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IContractorTransactions_DeleteContractor_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteContractor" />
+  </wsdl:message>
+  <wsdl:message name="IContractorTransactions_DeleteContractor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteContractorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceTransactions_AddDevice_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddDevice" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceTransactions_AddDevice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddDeviceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceTransactions_EditDevice_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditDevice" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceTransactions_EditDevice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditDeviceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceTransactions_DeleteDevice_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteDevice" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceTransactions_DeleteDevice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteDeviceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetTransactions_AddFixedAsset_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddFixedAsset" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetTransactions_AddFixedAsset_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddFixedAssetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetTransactions_EditFixedAsset_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditFixedAsset" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetTransactions_EditFixedAsset_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditFixedAssetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetTransactions_DeleteFixedAsset_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFixedAsset" />
+  </wsdl:message>
+  <wsdl:message name="IFixedAssetTransactions_DeleteFixedAsset_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFixedAssetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKindTransactions_AddKind_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddKind" />
+  </wsdl:message>
+  <wsdl:message name="IKindTransactions_AddKind_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddKindResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKindTransactions_EditKind_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditKind" />
+  </wsdl:message>
+  <wsdl:message name="IKindTransactions_EditKind_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditKindResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKindTransactions_DeleteKind_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteKind" />
+  </wsdl:message>
+  <wsdl:message name="IKindTransactions_DeleteKind_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteKindResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenceTransactions_AddLicence_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddLicence" />
+  </wsdl:message>
+  <wsdl:message name="ILicenceTransactions_AddLicence_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddLicenceResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenceTransactions_EditLicence_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditLicence" />
+  </wsdl:message>
+  <wsdl:message name="ILicenceTransactions_EditLicence_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditLicenceResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenceTransactions_DeleteLicence_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteLicence" />
+  </wsdl:message>
+  <wsdl:message name="ILicenceTransactions_DeleteLicence_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteLicenceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMembershipRoleTransactions_AddMembershipRole_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddMembershipRole" />
+  </wsdl:message>
+  <wsdl:message name="IMembershipRoleTransactions_AddMembershipRole_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddMembershipRoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMembershipRoleTransactions_EditMembershipRole_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditMembershipRole" />
+  </wsdl:message>
+  <wsdl:message name="IMembershipRoleTransactions_EditMembershipRole_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditMembershipRoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMembershipRoleTransactions_DeleteMembershipRole_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteMembershipRole" />
+  </wsdl:message>
+  <wsdl:message name="IMembershipRoleTransactions_DeleteMembershipRole_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteMembershipRoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMembershipUserTransactions_AddMembershipUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddMembershipUser" />
+  </wsdl:message>
+  <wsdl:message name="IMembershipUserTransactions_AddMembershipUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddMembershipUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMembershipUserTransactions_EditMembershipUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditMembershipUser" />
+  </wsdl:message>
+  <wsdl:message name="IMembershipUserTransactions_EditMembershipUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditMembershipUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMembershipUserTransactions_DeleteMembershipUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteMembershipUser" />
+  </wsdl:message>
+  <wsdl:message name="IMembershipUserTransactions_DeleteMembershipUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteMembershipUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPeripheralDeviceTransactions_AddPeripheralDevice_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPeripheralDevice" />
+  </wsdl:message>
+  <wsdl:message name="IPeripheralDeviceTransactions_AddPeripheralDevice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPeripheralDeviceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPeripheralDeviceTransactions_EditPeripheralDevice_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditPeripheralDevice" />
+  </wsdl:message>
+  <wsdl:message name="IPeripheralDeviceTransactions_EditPeripheralDevice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditPeripheralDeviceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPeripheralDeviceTransactions_DeletePeripheralDevice_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePeripheralDevice" />
+  </wsdl:message>
+  <wsdl:message name="IPeripheralDeviceTransactions_DeletePeripheralDevice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePeripheralDeviceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPersonTransactions_AddPerson_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPerson" />
+  </wsdl:message>
+  <wsdl:message name="IPersonTransactions_AddPerson_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPersonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPersonTransactions_EditPerson_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditPerson" />
+  </wsdl:message>
+  <wsdl:message name="IPersonTransactions_EditPerson_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditPersonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPersonTransactions_DeletePerson_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePerson" />
+  </wsdl:message>
+  <wsdl:message name="IPersonTransactions_DeletePerson_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePersonResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISectionTransactions_AddSection_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddSection" />
+  </wsdl:message>
+  <wsdl:message name="ISectionTransactions_AddSection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddSectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISectionTransactions_EditSection_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditSection" />
+  </wsdl:message>
+  <wsdl:message name="ISectionTransactions_EditSection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditSectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISectionTransactions_DeleteSection_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSection" />
+  </wsdl:message>
+  <wsdl:message name="ISectionTransactions_DeleteSection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISubgroupTransactions_AddSubgroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddSubgroup" />
+  </wsdl:message>
+  <wsdl:message name="ISubgroupTransactions_AddSubgroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddSubgroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISubgroupTransactions_EditSubgroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditSubgroup" />
+  </wsdl:message>
+  <wsdl:message name="ISubgroupTransactions_EditSubgroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditSubgroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISubgroupTransactions_DeleteSubgroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSubgroup" />
+  </wsdl:message>
+  <wsdl:message name="ISubgroupTransactions_DeleteSubgroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSubgroupResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IContractorService">
+    <wsdl:operation name="CountContractors">
+      <wsdl:input wsaw:Action="http://tempuri.org/IContractorService/CountContractors" message="tns:IContractorService_CountContractors_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IContractorService/CountContractorsResponse" message="tns:IContractorService_CountContractors_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllContractors">
+      <wsdl:input wsaw:Action="http://tempuri.org/IContractorService/GetAllContractors" message="tns:IContractorService_GetAllContractors_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IContractorService/GetAllContractorsResponse" message="tns:IContractorService_GetAllContractors_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContractorById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IContractorService/GetContractorById" message="tns:IContractorService_GetContractorById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IContractorService/GetContractorByIdResponse" message="tns:IContractorService_GetContractorById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContractorByNip">
+      <wsdl:input wsaw:Action="http://tempuri.org/IContractorService/GetContractorByNip" message="tns:IContractorService_GetContractorByNip_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IContractorService/GetContractorByNipResponse" message="tns:IContractorService_GetContractorByNip_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContractorsByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IContractorService/GetContractorsByName" message="tns:IContractorService_GetContractorsByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IContractorService/GetContractorsByNameResponse" message="tns:IContractorService_GetContractorsByName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContractorByAccountNumber">
+      <wsdl:input wsaw:Action="http://tempuri.org/IContractorService/GetContractorByAccountNumber" message="tns:IContractorService_GetContractorByAccountNumber_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IContractorService/GetContractorByAccountNumberResponse" message="tns:IContractorService_GetContractorByAccountNumber_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContractorsByStreet">
+      <wsdl:input wsaw:Action="http://tempuri.org/IContractorService/GetContractorsByStreet" message="tns:IContractorService_GetContractorsByStreet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IContractorService/GetContractorsByStreetResponse" message="tns:IContractorService_GetContractorsByStreet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContractorsByCity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IContractorService/GetContractorsByCity" message="tns:IContractorService_GetContractorsByCity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IContractorService/GetContractorsByCityResponse" message="tns:IContractorService_GetContractorsByCity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContractorsByCountry">
+      <wsdl:input wsaw:Action="http://tempuri.org/IContractorService/GetContractorsByCountry" message="tns:IContractorService_GetContractorsByCountry_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IContractorService/GetContractorsByCountryResponse" message="tns:IContractorService_GetContractorsByCountry_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContractorsByPostalCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IContractorService/GetContractorsByPostalCode" message="tns:IContractorService_GetContractorsByPostalCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IContractorService/GetContractorsByPostalCodeResponse" message="tns:IContractorService_GetContractorsByPostalCode_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IDeviceService">
+    <wsdl:operation name="CountDevices">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceService/CountDevices" message="tns:IDeviceService_CountDevices_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceService/CountDevicesResponse" message="tns:IDeviceService_CountDevices_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllDevices">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceService/GetAllDevices" message="tns:IDeviceService_GetAllDevices_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceService/GetAllDevicesResponse" message="tns:IDeviceService_GetAllDevices_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDeviceById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceService/GetDeviceById" message="tns:IDeviceService_GetDeviceById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceService/GetDeviceByIdResponse" message="tns:IDeviceService_GetDeviceById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDevicesByPheripheralDeviceId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceService/GetDevicesByPheripheralDeviceId" message="tns:IDeviceService_GetDevicesByPheripheralDeviceId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceService/GetDevicesByPheripheralDeviceIdResponse" message="tns:IDeviceService_GetDevicesByPheripheralDeviceId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDevicesBySerialNumber">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceService/GetDevicesBySerialNumber" message="tns:IDeviceService_GetDevicesBySerialNumber_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceService/GetDevicesBySerialNumberResponse" message="tns:IDeviceService_GetDevicesBySerialNumber_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDevicesByIpAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceService/GetDevicesByIpAddress" message="tns:IDeviceService_GetDevicesByIpAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceService/GetDevicesByIpAddressResponse" message="tns:IDeviceService_GetDevicesByIpAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDeviceByMacAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceService/GetDeviceByMacAddress" message="tns:IDeviceService_GetDeviceByMacAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceService/GetDeviceByMacAddressResponse" message="tns:IDeviceService_GetDeviceByMacAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDevicesByProducer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceService/GetDevicesByProducer" message="tns:IDeviceService_GetDevicesByProducer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceService/GetDevicesByProducerResponse" message="tns:IDeviceService_GetDevicesByProducer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDevicesByModel">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceService/GetDevicesByModel" message="tns:IDeviceService_GetDevicesByModel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceService/GetDevicesByModelResponse" message="tns:IDeviceService_GetDevicesByModel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDevicesByFixedAssetId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceService/GetDevicesByFixedAssetId" message="tns:IDeviceService_GetDevicesByFixedAssetId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceService/GetDevicesByFixedAssetIdResponse" message="tns:IDeviceService_GetDevicesByFixedAssetId_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IFixedAssetService">
+    <wsdl:operation name="CountFixedAssets">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFixedAssetService/CountFixedAssets" message="tns:IFixedAssetService_CountFixedAssets_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFixedAssetService/CountFixedAssetsResponse" message="tns:IFixedAssetService_CountFixedAssets_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllFixedAssets">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFixedAssetService/GetAllFixedAssets" message="tns:IFixedAssetService_GetAllFixedAssets_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFixedAssetService/GetAllFixedAssetsResponse" message="tns:IFixedAssetService_GetAllFixedAssets_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedAssetById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFixedAssetService/GetFixedAssetById" message="tns:IFixedAssetService_GetFixedAssetById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFixedAssetService/GetFixedAssetByIdResponse" message="tns:IFixedAssetService_GetFixedAssetById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedAssetByInventoryNumber">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFixedAssetService/GetFixedAssetByInventoryNumber" message="tns:IFixedAssetService_GetFixedAssetByInventoryNumber_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFixedAssetService/GetFixedAssetByInventoryNumberResponse" message="tns:IFixedAssetService_GetFixedAssetByInventoryNumber_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedAssetsByPersonId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFixedAssetService/GetFixedAssetsByPersonId" message="tns:IFixedAssetService_GetFixedAssetsByPersonId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFixedAssetService/GetFixedAssetsByPersonIdResponse" message="tns:IFixedAssetService_GetFixedAssetsByPersonId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedAssetsByActivationDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFixedAssetService/GetFixedAssetsByActivationDate" message="tns:IFixedAssetService_GetFixedAssetsByActivationDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFixedAssetService/GetFixedAssetsByActivationDateResponse" message="tns:IFixedAssetService_GetFixedAssetsByActivationDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedAssetsByRangeActivationDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFixedAssetService/GetFixedAssetsByRangeActivationDate" message="tns:IFixedAssetService_GetFixedAssetsByRangeActivationDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFixedAssetService/GetFixedAssetsByRangeActivationDateResponse" message="tns:IFixedAssetService_GetFixedAssetsByRangeActivationDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedAssetBySerialNumber">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFixedAssetService/GetFixedAssetBySerialNumber" message="tns:IFixedAssetService_GetFixedAssetBySerialNumber_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFixedAssetService/GetFixedAssetBySerialNumberResponse" message="tns:IFixedAssetService_GetFixedAssetBySerialNumber_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedAssetsByMPK">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFixedAssetService/GetFixedAssetsByMPK" message="tns:IFixedAssetService_GetFixedAssetsByMPK_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFixedAssetService/GetFixedAssetsByMPKResponse" message="tns:IFixedAssetService_GetFixedAssetsByMPK_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedAssetsByLocalization">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFixedAssetService/GetFixedAssetsByLocalization" message="tns:IFixedAssetService_GetFixedAssetsByLocalization_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFixedAssetService/GetFixedAssetsByLocalizationResponse" message="tns:IFixedAssetService_GetFixedAssetsByLocalization_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedAssetsByKindId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFixedAssetService/GetFixedAssetsByKindId" message="tns:IFixedAssetService_GetFixedAssetsByKindId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFixedAssetService/GetFixedAssetsByKindIdResponse" message="tns:IFixedAssetService_GetFixedAssetsByKindId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedAssetsBySubgroupId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFixedAssetService/GetFixedAssetsBySubgroupId" message="tns:IFixedAssetService_GetFixedAssetsBySubgroupId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFixedAssetService/GetFixedAssetsBySubgroupIdResponse" message="tns:IFixedAssetService_GetFixedAssetsBySubgroupId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedAssetsByLastModifiedDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFixedAssetService/GetFixedAssetsByLastModifiedDate" message="tns:IFixedAssetService_GetFixedAssetsByLastModifiedDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFixedAssetService/GetFixedAssetsByLastModifiedDateResponse" message="tns:IFixedAssetService_GetFixedAssetsByLastModifiedDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedAssetsByRangeLastModifiedDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFixedAssetService/GetFixedAssetsByRangeLastModifiedDate" message="tns:IFixedAssetService_GetFixedAssetsByRangeLastModifiedDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFixedAssetService/GetFixedAssetsByRangeLastModifiedDateResponse" message="tns:IFixedAssetService_GetFixedAssetsByRangeLastModifiedDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedAssetsByLastModifiedId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFixedAssetService/GetFixedAssetsByLastModifiedId" message="tns:IFixedAssetService_GetFixedAssetsByLastModifiedId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFixedAssetService/GetFixedAssetsByLastModifiedIdResponse" message="tns:IFixedAssetService_GetFixedAssetsByLastModifiedId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedAssetsToCassation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFixedAssetService/GetFixedAssetsToCassation" message="tns:IFixedAssetService_GetFixedAssetsToCassation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFixedAssetService/GetFixedAssetsToCassationResponse" message="tns:IFixedAssetService_GetFixedAssetsToCassation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedAssetsByCreator">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFixedAssetService/GetFixedAssetsByCreator" message="tns:IFixedAssetService_GetFixedAssetsByCreator_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFixedAssetService/GetFixedAssetsByCreatorResponse" message="tns:IFixedAssetService_GetFixedAssetsByCreator_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedAssetsByContractor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFixedAssetService/GetFixedAssetsByContractor" message="tns:IFixedAssetService_GetFixedAssetsByContractor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFixedAssetService/GetFixedAssetsByContractorResponse" message="tns:IFixedAssetService_GetFixedAssetsByContractor_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IKindService">
+    <wsdl:operation name="CountKinds">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKindService/CountKinds" message="tns:IKindService_CountKinds_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKindService/CountKindsResponse" message="tns:IKindService_CountKinds_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetKindById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKindService/GetKindById" message="tns:IKindService_GetKindById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKindService/GetKindByIdResponse" message="tns:IKindService_GetKindById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetKindByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKindService/GetKindByName" message="tns:IKindService_GetKindByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKindService/GetKindByNameResponse" message="tns:IKindService_GetKindByName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllKinds">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKindService/GetAllKinds" message="tns:IKindService_GetAllKinds_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKindService/GetAllKindsResponse" message="tns:IKindService_GetAllKinds_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ILicenceService">
+    <wsdl:operation name="CountLicences">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenceService/CountLicences" message="tns:ILicenceService_CountLicences_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenceService/CountLicencesResponse" message="tns:ILicenceService_CountLicences_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllLicences">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenceService/GetAllLicences" message="tns:ILicenceService_GetAllLicences_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenceService/GetAllLicencesResponse" message="tns:ILicenceService_GetAllLicences_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenceById">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenceService/GetLicenceById" message="tns:ILicenceService_GetLicenceById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenceService/GetLicenceByIdResponse" message="tns:ILicenceService_GetLicenceById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenceByInventoryNumber">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenceService/GetLicenceByInventoryNumber" message="tns:ILicenceService_GetLicenceByInventoryNumber_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenceService/GetLicenceByInventoryNumberResponse" message="tns:ILicenceService_GetLicenceByInventoryNumber_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLicencesByFixedAssetId">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenceService/GetLicencesByFixedAssetId" message="tns:ILicenceService_GetLicencesByFixedAssetId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenceService/GetLicencesByFixedAssetIdResponse" message="tns:ILicenceService_GetLicencesByFixedAssetId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLicencesByLicenceNumber">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenceService/GetLicencesByLicenceNumber" message="tns:ILicenceService_GetLicencesByLicenceNumber_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenceService/GetLicencesByLicenceNumberResponse" message="tns:ILicenceService_GetLicencesByLicenceNumber_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLicencesByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenceService/GetLicencesByName" message="tns:ILicenceService_GetLicencesByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenceService/GetLicencesByNameResponse" message="tns:ILicenceService_GetLicencesByName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenceByCreator">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenceService/GetLicenceByCreator" message="tns:ILicenceService_GetLicenceByCreator_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenceService/GetLicenceByCreatorResponse" message="tns:ILicenceService_GetLicenceByCreator_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLicencesByLastModifiedDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenceService/GetLicencesByLastModifiedDate" message="tns:ILicenceService_GetLicencesByLastModifiedDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenceService/GetLicencesByLastModifiedDateResponse" message="tns:ILicenceService_GetLicencesByLastModifiedDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLicencesByRangeLastModifiedDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenceService/GetLicencesByRangeLastModifiedDate" message="tns:ILicenceService_GetLicencesByRangeLastModifiedDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenceService/GetLicencesByRangeLastModifiedDateResponse" message="tns:ILicenceService_GetLicencesByRangeLastModifiedDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLicencesByLastModifiedMembershipUserLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenceService/GetLicencesByLastModifiedMembershipUserLogin" message="tns:ILicenceService_GetLicencesByLastModifiedMembershipUserLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenceService/GetLicencesByLastModifiedMembershipUserLoginResponse" message="tns:ILicenceService_GetLicencesByLastModifiedMembershipUserLogin_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IMembershipRoleService">
+    <wsdl:operation name="GetAllRoles">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMembershipRoleService/GetAllRoles" message="tns:IMembershipRoleService_GetAllRoles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMembershipRoleService/GetAllRolesResponse" message="tns:IMembershipRoleService_GetAllRoles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRoleById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMembershipRoleService/GetRoleById" message="tns:IMembershipRoleService_GetRoleById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMembershipRoleService/GetRoleByIdResponse" message="tns:IMembershipRoleService_GetRoleById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRoleByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMembershipRoleService/GetRoleByName" message="tns:IMembershipRoleService_GetRoleByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMembershipRoleService/GetRoleByNameResponse" message="tns:IMembershipRoleService_GetRoleByName_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IMembershipUserService">
+    <wsdl:operation name="IsUserInRole">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMembershipUserService/IsUserInRole" message="tns:IMembershipUserService_IsUserInRole_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMembershipUserService/IsUserInRoleResponse" message="tns:IMembershipUserService_IsUserInRole_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsUserActive">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMembershipUserService/IsUserActive" message="tns:IMembershipUserService_IsUserActive_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMembershipUserService/IsUserActiveResponse" message="tns:IMembershipUserService_IsUserActive_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsUserOnline">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMembershipUserService/IsUserOnline" message="tns:IMembershipUserService_IsUserOnline_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMembershipUserService/IsUserOnlineResponse" message="tns:IMembershipUserService_IsUserOnline_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUsers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMembershipUserService/GetAllUsers" message="tns:IMembershipUserService_GetAllUsers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMembershipUserService/GetAllUsersResponse" message="tns:IMembershipUserService_GetAllUsers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOnlineUsers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMembershipUserService/GetOnlineUsers" message="tns:IMembershipUserService_GetOnlineUsers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMembershipUserService/GetOnlineUsersResponse" message="tns:IMembershipUserService_GetOnlineUsers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetActiveUsers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMembershipUserService/GetActiveUsers" message="tns:IMembershipUserService_GetActiveUsers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMembershipUserService/GetActiveUsersResponse" message="tns:IMembershipUserService_GetActiveUsers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNonActiveUsers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMembershipUserService/GetNonActiveUsers" message="tns:IMembershipUserService_GetNonActiveUsers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMembershipUserService/GetNonActiveUsersResponse" message="tns:IMembershipUserService_GetNonActiveUsers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMembershipUserService/GetUserByLogin" message="tns:IMembershipUserService_GetUserByLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMembershipUserService/GetUserByLoginResponse" message="tns:IMembershipUserService_GetUserByLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByEmail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMembershipUserService/GetUserByEmail" message="tns:IMembershipUserService_GetUserByEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMembershipUserService/GetUserByEmailResponse" message="tns:IMembershipUserService_GetUserByEmail_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IPeripheralDeviceService">
+    <wsdl:operation name="CountPeripheralDevices">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPeripheralDeviceService/CountPeripheralDevices" message="tns:IPeripheralDeviceService_CountPeripheralDevices_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPeripheralDeviceService/CountPeripheralDevicesResponse" message="tns:IPeripheralDeviceService_CountPeripheralDevices_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPeripheralDevices">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPeripheralDeviceService/GetAllPeripheralDevices" message="tns:IPeripheralDeviceService_GetAllPeripheralDevices_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPeripheralDeviceService/GetAllPeripheralDevicesResponse" message="tns:IPeripheralDeviceService_GetAllPeripheralDevices_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPeripheralDeviceById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPeripheralDeviceService/GetPeripheralDeviceById" message="tns:IPeripheralDeviceService_GetPeripheralDeviceById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPeripheralDeviceService/GetPeripheralDeviceByIdResponse" message="tns:IPeripheralDeviceService_GetPeripheralDeviceById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPeripheralDeviceByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPeripheralDeviceService/GetPeripheralDeviceByName" message="tns:IPeripheralDeviceService_GetPeripheralDeviceByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPeripheralDeviceService/GetPeripheralDeviceByNameResponse" message="tns:IPeripheralDeviceService_GetPeripheralDeviceByName_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IPersonService">
+    <wsdl:operation name="CountPersons">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPersonService/CountPersons" message="tns:IPersonService_CountPersons_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPersonService/CountPersonsResponse" message="tns:IPersonService_CountPersons_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPersons">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPersonService/GetAllPersons" message="tns:IPersonService_GetAllPersons_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPersonService/GetAllPersonsResponse" message="tns:IPersonService_GetAllPersons_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPersonService/GetPersonById" message="tns:IPersonService_GetPersonById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPersonService/GetPersonByIdResponse" message="tns:IPersonService_GetPersonById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonsByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPersonService/GetPersonsByName" message="tns:IPersonService_GetPersonsByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPersonService/GetPersonsByNameResponse" message="tns:IPersonService_GetPersonsByName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonsBySurname">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPersonService/GetPersonsBySurname" message="tns:IPersonService_GetPersonsBySurname_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPersonService/GetPersonsBySurnameResponse" message="tns:IPersonService_GetPersonsBySurname_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonsByNameAndSurname">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPersonService/GetPersonsByNameAndSurname" message="tns:IPersonService_GetPersonsByNameAndSurname_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPersonService/GetPersonsByNameAndSurnameResponse" message="tns:IPersonService_GetPersonsByNameAndSurname_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonByEmail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPersonService/GetPersonByEmail" message="tns:IPersonService_GetPersonByEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPersonService/GetPersonByEmailResponse" message="tns:IPersonService_GetPersonByEmail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonByPhone">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPersonService/GetPersonByPhone" message="tns:IPersonService_GetPersonByPhone_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPersonService/GetPersonByPhoneResponse" message="tns:IPersonService_GetPersonByPhone_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonsWithEmail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPersonService/GetPersonsWithEmail" message="tns:IPersonService_GetPersonsWithEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPersonService/GetPersonsWithEmailResponse" message="tns:IPersonService_GetPersonsWithEmail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonsWithComPhone">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPersonService/GetPersonsWithComPhone" message="tns:IPersonService_GetPersonsWithComPhone_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPersonService/GetPersonsWithComPhoneResponse" message="tns:IPersonService_GetPersonsWithComPhone_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonsBySection">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPersonService/GetPersonsBySection" message="tns:IPersonService_GetPersonsBySection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPersonService/GetPersonsBySectionResponse" message="tns:IPersonService_GetPersonsBySection_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ISectionService">
+    <wsdl:operation name="CountSections">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISectionService/CountSections" message="tns:ISectionService_CountSections_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISectionService/CountSectionsResponse" message="tns:ISectionService_CountSections_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSections">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISectionService/GetAllSections" message="tns:ISectionService_GetAllSections_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISectionService/GetAllSectionsResponse" message="tns:ISectionService_GetAllSections_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSectionById">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISectionService/GetSectionById" message="tns:ISectionService_GetSectionById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISectionService/GetSectionByIdResponse" message="tns:ISectionService_GetSectionById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSectionByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISectionService/GetSectionByName" message="tns:ISectionService_GetSectionByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISectionService/GetSectionByNameResponse" message="tns:ISectionService_GetSectionByName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSectionByShortName">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISectionService/GetSectionByShortName" message="tns:ISectionService_GetSectionByShortName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISectionService/GetSectionByShortNameResponse" message="tns:ISectionService_GetSectionByShortName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSectionsByPostalCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISectionService/GetSectionsByPostalCode" message="tns:ISectionService_GetSectionsByPostalCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISectionService/GetSectionsByPostalCodeResponse" message="tns:ISectionService_GetSectionsByPostalCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSectionsByPost">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISectionService/GetSectionsByPost" message="tns:ISectionService_GetSectionsByPost_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISectionService/GetSectionsByPostResponse" message="tns:ISectionService_GetSectionsByPost_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSectionsByLocality">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISectionService/GetSectionsByLocality" message="tns:ISectionService_GetSectionsByLocality_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISectionService/GetSectionsByLocalityResponse" message="tns:ISectionService_GetSectionsByLocality_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSectionByPhoneNumber">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISectionService/GetSectionByPhoneNumber" message="tns:ISectionService_GetSectionByPhoneNumber_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISectionService/GetSectionByPhoneNumberResponse" message="tns:ISectionService_GetSectionByPhoneNumber_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSectionByEmail">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISectionService/GetSectionByEmail" message="tns:ISectionService_GetSectionByEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISectionService/GetSectionByEmailResponse" message="tns:ISectionService_GetSectionByEmail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSectionsByStreet">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISectionService/GetSectionsByStreet" message="tns:ISectionService_GetSectionsByStreet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISectionService/GetSectionsByStreetResponse" message="tns:ISectionService_GetSectionsByStreet_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ISubgroupService">
+    <wsdl:operation name="CountSubgroups">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISubgroupService/CountSubgroups" message="tns:ISubgroupService_CountSubgroups_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISubgroupService/CountSubgroupsResponse" message="tns:ISubgroupService_CountSubgroups_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSubgroups">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISubgroupService/GetAllSubgroups" message="tns:ISubgroupService_GetAllSubgroups_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISubgroupService/GetAllSubgroupsResponse" message="tns:ISubgroupService_GetAllSubgroups_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubgroupById">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISubgroupService/GetSubgroupById" message="tns:ISubgroupService_GetSubgroupById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISubgroupService/GetSubgroupByIdResponse" message="tns:ISubgroupService_GetSubgroupById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubgroupByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISubgroupService/GetSubgroupByName" message="tns:ISubgroupService_GetSubgroupByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISubgroupService/GetSubgroupByNameResponse" message="tns:ISubgroupService_GetSubgroupByName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubgroupByShortName">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISubgroupService/GetSubgroupByShortName" message="tns:ISubgroupService_GetSubgroupByShortName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISubgroupService/GetSubgroupByShortNameResponse" message="tns:ISubgroupService_GetSubgroupByShortName_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IContractorTransactions">
+    <wsdl:operation name="AddContractor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IContractorTransactions/AddContractor" message="tns:IContractorTransactions_AddContractor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IContractorTransactions/AddContractorResponse" message="tns:IContractorTransactions_AddContractor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditContractor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IContractorTransactions/EditContractor" message="tns:IContractorTransactions_EditContractor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IContractorTransactions/EditContractorResponse" message="tns:IContractorTransactions_EditContractor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteContractor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IContractorTransactions/DeleteContractor" message="tns:IContractorTransactions_DeleteContractor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IContractorTransactions/DeleteContractorResponse" message="tns:IContractorTransactions_DeleteContractor_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IDeviceTransactions">
+    <wsdl:operation name="AddDevice">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceTransactions/AddDevice" message="tns:IDeviceTransactions_AddDevice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceTransactions/AddDeviceResponse" message="tns:IDeviceTransactions_AddDevice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditDevice">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceTransactions/EditDevice" message="tns:IDeviceTransactions_EditDevice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceTransactions/EditDeviceResponse" message="tns:IDeviceTransactions_EditDevice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDevice">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceTransactions/DeleteDevice" message="tns:IDeviceTransactions_DeleteDevice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceTransactions/DeleteDeviceResponse" message="tns:IDeviceTransactions_DeleteDevice_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IFixedAssetTransactions">
+    <wsdl:operation name="AddFixedAsset">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFixedAssetTransactions/AddFixedAsset" message="tns:IFixedAssetTransactions_AddFixedAsset_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFixedAssetTransactions/AddFixedAssetResponse" message="tns:IFixedAssetTransactions_AddFixedAsset_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditFixedAsset">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFixedAssetTransactions/EditFixedAsset" message="tns:IFixedAssetTransactions_EditFixedAsset_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFixedAssetTransactions/EditFixedAssetResponse" message="tns:IFixedAssetTransactions_EditFixedAsset_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFixedAsset">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFixedAssetTransactions/DeleteFixedAsset" message="tns:IFixedAssetTransactions_DeleteFixedAsset_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFixedAssetTransactions/DeleteFixedAssetResponse" message="tns:IFixedAssetTransactions_DeleteFixedAsset_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IKindTransactions">
+    <wsdl:operation name="AddKind">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKindTransactions/AddKind" message="tns:IKindTransactions_AddKind_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKindTransactions/AddKindResponse" message="tns:IKindTransactions_AddKind_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditKind">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKindTransactions/EditKind" message="tns:IKindTransactions_EditKind_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKindTransactions/EditKindResponse" message="tns:IKindTransactions_EditKind_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteKind">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKindTransactions/DeleteKind" message="tns:IKindTransactions_DeleteKind_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKindTransactions/DeleteKindResponse" message="tns:IKindTransactions_DeleteKind_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ILicenceTransactions">
+    <wsdl:operation name="AddLicence">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenceTransactions/AddLicence" message="tns:ILicenceTransactions_AddLicence_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenceTransactions/AddLicenceResponse" message="tns:ILicenceTransactions_AddLicence_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditLicence">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenceTransactions/EditLicence" message="tns:ILicenceTransactions_EditLicence_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenceTransactions/EditLicenceResponse" message="tns:ILicenceTransactions_EditLicence_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteLicence">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenceTransactions/DeleteLicence" message="tns:ILicenceTransactions_DeleteLicence_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenceTransactions/DeleteLicenceResponse" message="tns:ILicenceTransactions_DeleteLicence_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IMembershipRoleTransactions">
+    <wsdl:operation name="AddMembershipRole">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMembershipRoleTransactions/AddMembershipRole" message="tns:IMembershipRoleTransactions_AddMembershipRole_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMembershipRoleTransactions/AddMembershipRoleResponse" message="tns:IMembershipRoleTransactions_AddMembershipRole_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditMembershipRole">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMembershipRoleTransactions/EditMembershipRole" message="tns:IMembershipRoleTransactions_EditMembershipRole_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMembershipRoleTransactions/EditMembershipRoleResponse" message="tns:IMembershipRoleTransactions_EditMembershipRole_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMembershipRole">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMembershipRoleTransactions/DeleteMembershipRole" message="tns:IMembershipRoleTransactions_DeleteMembershipRole_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMembershipRoleTransactions/DeleteMembershipRoleResponse" message="tns:IMembershipRoleTransactions_DeleteMembershipRole_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IMembershipUserTransactions">
+    <wsdl:operation name="AddMembershipUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMembershipUserTransactions/AddMembershipUser" message="tns:IMembershipUserTransactions_AddMembershipUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMembershipUserTransactions/AddMembershipUserResponse" message="tns:IMembershipUserTransactions_AddMembershipUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditMembershipUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMembershipUserTransactions/EditMembershipUser" message="tns:IMembershipUserTransactions_EditMembershipUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMembershipUserTransactions/EditMembershipUserResponse" message="tns:IMembershipUserTransactions_EditMembershipUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMembershipUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMembershipUserTransactions/DeleteMembershipUser" message="tns:IMembershipUserTransactions_DeleteMembershipUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMembershipUserTransactions/DeleteMembershipUserResponse" message="tns:IMembershipUserTransactions_DeleteMembershipUser_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IPeripheralDeviceTransactions">
+    <wsdl:operation name="AddPeripheralDevice">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPeripheralDeviceTransactions/AddPeripheralDevice" message="tns:IPeripheralDeviceTransactions_AddPeripheralDevice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPeripheralDeviceTransactions/AddPeripheralDeviceResponse" message="tns:IPeripheralDeviceTransactions_AddPeripheralDevice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditPeripheralDevice">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPeripheralDeviceTransactions/EditPeripheralDevice" message="tns:IPeripheralDeviceTransactions_EditPeripheralDevice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPeripheralDeviceTransactions/EditPeripheralDeviceResponse" message="tns:IPeripheralDeviceTransactions_EditPeripheralDevice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePeripheralDevice">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPeripheralDeviceTransactions/DeletePeripheralDevice" message="tns:IPeripheralDeviceTransactions_DeletePeripheralDevice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPeripheralDeviceTransactions/DeletePeripheralDeviceResponse" message="tns:IPeripheralDeviceTransactions_DeletePeripheralDevice_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IPersonTransactions">
+    <wsdl:operation name="AddPerson">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPersonTransactions/AddPerson" message="tns:IPersonTransactions_AddPerson_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPersonTransactions/AddPersonResponse" message="tns:IPersonTransactions_AddPerson_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditPerson">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPersonTransactions/EditPerson" message="tns:IPersonTransactions_EditPerson_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPersonTransactions/EditPersonResponse" message="tns:IPersonTransactions_EditPerson_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePerson">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPersonTransactions/DeletePerson" message="tns:IPersonTransactions_DeletePerson_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPersonTransactions/DeletePersonResponse" message="tns:IPersonTransactions_DeletePerson_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ISectionTransactions">
+    <wsdl:operation name="AddSection">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISectionTransactions/AddSection" message="tns:ISectionTransactions_AddSection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISectionTransactions/AddSectionResponse" message="tns:ISectionTransactions_AddSection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditSection">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISectionTransactions/EditSection" message="tns:ISectionTransactions_EditSection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISectionTransactions/EditSectionResponse" message="tns:ISectionTransactions_EditSection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSection">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISectionTransactions/DeleteSection" message="tns:ISectionTransactions_DeleteSection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISectionTransactions/DeleteSectionResponse" message="tns:ISectionTransactions_DeleteSection_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ISubgroupTransactions">
+    <wsdl:operation name="AddSubgroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISubgroupTransactions/AddSubgroup" message="tns:ISubgroupTransactions_AddSubgroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISubgroupTransactions/AddSubgroupResponse" message="tns:ISubgroupTransactions_AddSubgroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditSubgroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISubgroupTransactions/EditSubgroup" message="tns:ISubgroupTransactions_EditSubgroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISubgroupTransactions/EditSubgroupResponse" message="tns:ISubgroupTransactions_EditSubgroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSubgroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISubgroupTransactions/DeleteSubgroup" message="tns:ISubgroupTransactions_DeleteSubgroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISubgroupTransactions/DeleteSubgroupResponse" message="tns:ISubgroupTransactions_DeleteSubgroup_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ContractorBinding" type="tns:IContractorService">
+    <wsp:PolicyReference URI="#ContractorBinding_policy">
+    </wsp:PolicyReference>
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="CountContractors">
+      <soap12:operation soapAction="http://tempuri.org/IContractorService/CountContractors" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllContractors">
+      <soap12:operation soapAction="http://tempuri.org/IContractorService/GetAllContractors" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContractorById">
+      <soap12:operation soapAction="http://tempuri.org/IContractorService/GetContractorById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContractorByNip">
+      <soap12:operation soapAction="http://tempuri.org/IContractorService/GetContractorByNip" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContractorsByName">
+      <soap12:operation soapAction="http://tempuri.org/IContractorService/GetContractorsByName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContractorByAccountNumber">
+      <soap12:operation soapAction="http://tempuri.org/IContractorService/GetContractorByAccountNumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContractorsByStreet">
+      <soap12:operation soapAction="http://tempuri.org/IContractorService/GetContractorsByStreet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContractorsByCity">
+      <soap12:operation soapAction="http://tempuri.org/IContractorService/GetContractorsByCity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContractorsByCountry">
+      <soap12:operation soapAction="http://tempuri.org/IContractorService/GetContractorsByCountry" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContractorsByPostalCode">
+      <soap12:operation soapAction="http://tempuri.org/IContractorService/GetContractorsByPostalCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DeviceBinding" type="tns:IDeviceService">
+    <wsp:PolicyReference URI="#DeviceBinding_policy">
+    </wsp:PolicyReference>
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="CountDevices">
+      <soap12:operation soapAction="http://tempuri.org/IDeviceService/CountDevices" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllDevices">
+      <soap12:operation soapAction="http://tempuri.org/IDeviceService/GetAllDevices" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDeviceById">
+      <soap12:operation soapAction="http://tempuri.org/IDeviceService/GetDeviceById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDevicesByPheripheralDeviceId">
+      <soap12:operation soapAction="http://tempuri.org/IDeviceService/GetDevicesByPheripheralDeviceId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDevicesBySerialNumber">
+      <soap12:operation soapAction="http://tempuri.org/IDeviceService/GetDevicesBySerialNumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDevicesByIpAddress">
+      <soap12:operation soapAction="http://tempuri.org/IDeviceService/GetDevicesByIpAddress" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDeviceByMacAddress">
+      <soap12:operation soapAction="http://tempuri.org/IDeviceService/GetDeviceByMacAddress" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDevicesByProducer">
+      <soap12:operation soapAction="http://tempuri.org/IDeviceService/GetDevicesByProducer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDevicesByModel">
+      <soap12:operation soapAction="http://tempuri.org/IDeviceService/GetDevicesByModel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDevicesByFixedAssetId">
+      <soap12:operation soapAction="http://tempuri.org/IDeviceService/GetDevicesByFixedAssetId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="FixedAssetBinding" type="tns:IFixedAssetService">
+    <wsp:PolicyReference URI="#FixedAssetBinding_policy">
+    </wsp:PolicyReference>
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="CountFixedAssets">
+      <soap12:operation soapAction="http://tempuri.org/IFixedAssetService/CountFixedAssets" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllFixedAssets">
+      <soap12:operation soapAction="http://tempuri.org/IFixedAssetService/GetAllFixedAssets" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedAssetById">
+      <soap12:operation soapAction="http://tempuri.org/IFixedAssetService/GetFixedAssetById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedAssetByInventoryNumber">
+      <soap12:operation soapAction="http://tempuri.org/IFixedAssetService/GetFixedAssetByInventoryNumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedAssetsByPersonId">
+      <soap12:operation soapAction="http://tempuri.org/IFixedAssetService/GetFixedAssetsByPersonId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedAssetsByActivationDate">
+      <soap12:operation soapAction="http://tempuri.org/IFixedAssetService/GetFixedAssetsByActivationDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedAssetsByRangeActivationDate">
+      <soap12:operation soapAction="http://tempuri.org/IFixedAssetService/GetFixedAssetsByRangeActivationDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedAssetBySerialNumber">
+      <soap12:operation soapAction="http://tempuri.org/IFixedAssetService/GetFixedAssetBySerialNumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedAssetsByMPK">
+      <soap12:operation soapAction="http://tempuri.org/IFixedAssetService/GetFixedAssetsByMPK" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedAssetsByLocalization">
+      <soap12:operation soapAction="http://tempuri.org/IFixedAssetService/GetFixedAssetsByLocalization" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedAssetsByKindId">
+      <soap12:operation soapAction="http://tempuri.org/IFixedAssetService/GetFixedAssetsByKindId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedAssetsBySubgroupId">
+      <soap12:operation soapAction="http://tempuri.org/IFixedAssetService/GetFixedAssetsBySubgroupId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedAssetsByLastModifiedDate">
+      <soap12:operation soapAction="http://tempuri.org/IFixedAssetService/GetFixedAssetsByLastModifiedDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedAssetsByRangeLastModifiedDate">
+      <soap12:operation soapAction="http://tempuri.org/IFixedAssetService/GetFixedAssetsByRangeLastModifiedDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedAssetsByLastModifiedId">
+      <soap12:operation soapAction="http://tempuri.org/IFixedAssetService/GetFixedAssetsByLastModifiedId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedAssetsToCassation">
+      <soap12:operation soapAction="http://tempuri.org/IFixedAssetService/GetFixedAssetsToCassation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedAssetsByCreator">
+      <soap12:operation soapAction="http://tempuri.org/IFixedAssetService/GetFixedAssetsByCreator" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedAssetsByContractor">
+      <soap12:operation soapAction="http://tempuri.org/IFixedAssetService/GetFixedAssetsByContractor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="KindBinding" type="tns:IKindService">
+    <wsp:PolicyReference URI="#KindBinding_policy">
+    </wsp:PolicyReference>
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="CountKinds">
+      <soap12:operation soapAction="http://tempuri.org/IKindService/CountKinds" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetKindById">
+      <soap12:operation soapAction="http://tempuri.org/IKindService/GetKindById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetKindByName">
+      <soap12:operation soapAction="http://tempuri.org/IKindService/GetKindByName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllKinds">
+      <soap12:operation soapAction="http://tempuri.org/IKindService/GetAllKinds" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="LicenceBinding" type="tns:ILicenceService">
+    <wsp:PolicyReference URI="#LicenceBinding_policy">
+    </wsp:PolicyReference>
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="CountLicences">
+      <soap12:operation soapAction="http://tempuri.org/ILicenceService/CountLicences" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllLicences">
+      <soap12:operation soapAction="http://tempuri.org/ILicenceService/GetAllLicences" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenceById">
+      <soap12:operation soapAction="http://tempuri.org/ILicenceService/GetLicenceById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenceByInventoryNumber">
+      <soap12:operation soapAction="http://tempuri.org/ILicenceService/GetLicenceByInventoryNumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicencesByFixedAssetId">
+      <soap12:operation soapAction="http://tempuri.org/ILicenceService/GetLicencesByFixedAssetId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicencesByLicenceNumber">
+      <soap12:operation soapAction="http://tempuri.org/ILicenceService/GetLicencesByLicenceNumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicencesByName">
+      <soap12:operation soapAction="http://tempuri.org/ILicenceService/GetLicencesByName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenceByCreator">
+      <soap12:operation soapAction="http://tempuri.org/ILicenceService/GetLicenceByCreator" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicencesByLastModifiedDate">
+      <soap12:operation soapAction="http://tempuri.org/ILicenceService/GetLicencesByLastModifiedDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicencesByRangeLastModifiedDate">
+      <soap12:operation soapAction="http://tempuri.org/ILicenceService/GetLicencesByRangeLastModifiedDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicencesByLastModifiedMembershipUserLogin">
+      <soap12:operation soapAction="http://tempuri.org/ILicenceService/GetLicencesByLastModifiedMembershipUserLogin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MembershipRoleBinding" type="tns:IMembershipRoleService">
+    <wsp:PolicyReference URI="#MembershipRoleBinding_policy">
+    </wsp:PolicyReference>
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="GetAllRoles">
+      <soap12:operation soapAction="http://tempuri.org/IMembershipRoleService/GetAllRoles" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoleById">
+      <soap12:operation soapAction="http://tempuri.org/IMembershipRoleService/GetRoleById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoleByName">
+      <soap12:operation soapAction="http://tempuri.org/IMembershipRoleService/GetRoleByName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MembershipUserBinding" type="tns:IMembershipUserService">
+    <wsp:PolicyReference URI="#MembershipUserBinding_policy">
+    </wsp:PolicyReference>
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="IsUserInRole">
+      <soap12:operation soapAction="http://tempuri.org/IMembershipUserService/IsUserInRole" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsUserActive">
+      <soap12:operation soapAction="http://tempuri.org/IMembershipUserService/IsUserActive" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsUserOnline">
+      <soap12:operation soapAction="http://tempuri.org/IMembershipUserService/IsUserOnline" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUsers">
+      <soap12:operation soapAction="http://tempuri.org/IMembershipUserService/GetAllUsers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOnlineUsers">
+      <soap12:operation soapAction="http://tempuri.org/IMembershipUserService/GetOnlineUsers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetActiveUsers">
+      <soap12:operation soapAction="http://tempuri.org/IMembershipUserService/GetActiveUsers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNonActiveUsers">
+      <soap12:operation soapAction="http://tempuri.org/IMembershipUserService/GetNonActiveUsers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByLogin">
+      <soap12:operation soapAction="http://tempuri.org/IMembershipUserService/GetUserByLogin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByEmail">
+      <soap12:operation soapAction="http://tempuri.org/IMembershipUserService/GetUserByEmail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PeripheralDeviceBinding" type="tns:IPeripheralDeviceService">
+    <wsp:PolicyReference URI="#PeripheralDeviceBinding_policy">
+    </wsp:PolicyReference>
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="CountPeripheralDevices">
+      <soap12:operation soapAction="http://tempuri.org/IPeripheralDeviceService/CountPeripheralDevices" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPeripheralDevices">
+      <soap12:operation soapAction="http://tempuri.org/IPeripheralDeviceService/GetAllPeripheralDevices" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPeripheralDeviceById">
+      <soap12:operation soapAction="http://tempuri.org/IPeripheralDeviceService/GetPeripheralDeviceById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPeripheralDeviceByName">
+      <soap12:operation soapAction="http://tempuri.org/IPeripheralDeviceService/GetPeripheralDeviceByName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PersonBinding" type="tns:IPersonService">
+    <wsp:PolicyReference URI="#PersonBinding_policy">
+    </wsp:PolicyReference>
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="CountPersons">
+      <soap12:operation soapAction="http://tempuri.org/IPersonService/CountPersons" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPersons">
+      <soap12:operation soapAction="http://tempuri.org/IPersonService/GetAllPersons" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonById">
+      <soap12:operation soapAction="http://tempuri.org/IPersonService/GetPersonById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonsByName">
+      <soap12:operation soapAction="http://tempuri.org/IPersonService/GetPersonsByName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonsBySurname">
+      <soap12:operation soapAction="http://tempuri.org/IPersonService/GetPersonsBySurname" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonsByNameAndSurname">
+      <soap12:operation soapAction="http://tempuri.org/IPersonService/GetPersonsByNameAndSurname" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonByEmail">
+      <soap12:operation soapAction="http://tempuri.org/IPersonService/GetPersonByEmail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonByPhone">
+      <soap12:operation soapAction="http://tempuri.org/IPersonService/GetPersonByPhone" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonsWithEmail">
+      <soap12:operation soapAction="http://tempuri.org/IPersonService/GetPersonsWithEmail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonsWithComPhone">
+      <soap12:operation soapAction="http://tempuri.org/IPersonService/GetPersonsWithComPhone" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonsBySection">
+      <soap12:operation soapAction="http://tempuri.org/IPersonService/GetPersonsBySection" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SectionBinding" type="tns:ISectionService">
+    <wsp:PolicyReference URI="#SectionBinding_policy">
+    </wsp:PolicyReference>
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="CountSections">
+      <soap12:operation soapAction="http://tempuri.org/ISectionService/CountSections" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSections">
+      <soap12:operation soapAction="http://tempuri.org/ISectionService/GetAllSections" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSectionById">
+      <soap12:operation soapAction="http://tempuri.org/ISectionService/GetSectionById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSectionByName">
+      <soap12:operation soapAction="http://tempuri.org/ISectionService/GetSectionByName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSectionByShortName">
+      <soap12:operation soapAction="http://tempuri.org/ISectionService/GetSectionByShortName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSectionsByPostalCode">
+      <soap12:operation soapAction="http://tempuri.org/ISectionService/GetSectionsByPostalCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSectionsByPost">
+      <soap12:operation soapAction="http://tempuri.org/ISectionService/GetSectionsByPost" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSectionsByLocality">
+      <soap12:operation soapAction="http://tempuri.org/ISectionService/GetSectionsByLocality" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSectionByPhoneNumber">
+      <soap12:operation soapAction="http://tempuri.org/ISectionService/GetSectionByPhoneNumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSectionByEmail">
+      <soap12:operation soapAction="http://tempuri.org/ISectionService/GetSectionByEmail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSectionsByStreet">
+      <soap12:operation soapAction="http://tempuri.org/ISectionService/GetSectionsByStreet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SubgroupBinding" type="tns:ISubgroupService">
+    <wsp:PolicyReference URI="#SubgroupBinding_policy">
+    </wsp:PolicyReference>
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="CountSubgroups">
+      <soap12:operation soapAction="http://tempuri.org/ISubgroupService/CountSubgroups" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSubgroups">
+      <soap12:operation soapAction="http://tempuri.org/ISubgroupService/GetAllSubgroups" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubgroupById">
+      <soap12:operation soapAction="http://tempuri.org/ISubgroupService/GetSubgroupById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubgroupByName">
+      <soap12:operation soapAction="http://tempuri.org/ISubgroupService/GetSubgroupByName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubgroupByShortName">
+      <soap12:operation soapAction="http://tempuri.org/ISubgroupService/GetSubgroupByShortName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ContractorBinding1" type="tns:IContractorTransactions">
+    <wsp:PolicyReference URI="#ContractorBinding1_policy">
+    </wsp:PolicyReference>
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="AddContractor">
+      <soap12:operation soapAction="http://tempuri.org/IContractorTransactions/AddContractor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditContractor">
+      <soap12:operation soapAction="http://tempuri.org/IContractorTransactions/EditContractor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteContractor">
+      <soap12:operation soapAction="http://tempuri.org/IContractorTransactions/DeleteContractor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DeviceBinding1" type="tns:IDeviceTransactions">
+    <wsp:PolicyReference URI="#DeviceBinding1_policy">
+    </wsp:PolicyReference>
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="AddDevice">
+      <soap12:operation soapAction="http://tempuri.org/IDeviceTransactions/AddDevice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditDevice">
+      <soap12:operation soapAction="http://tempuri.org/IDeviceTransactions/EditDevice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDevice">
+      <soap12:operation soapAction="http://tempuri.org/IDeviceTransactions/DeleteDevice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="FixedAssetBinding1" type="tns:IFixedAssetTransactions">
+    <wsp:PolicyReference URI="#FixedAssetBinding1_policy">
+    </wsp:PolicyReference>
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="AddFixedAsset">
+      <soap12:operation soapAction="http://tempuri.org/IFixedAssetTransactions/AddFixedAsset" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditFixedAsset">
+      <soap12:operation soapAction="http://tempuri.org/IFixedAssetTransactions/EditFixedAsset" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFixedAsset">
+      <soap12:operation soapAction="http://tempuri.org/IFixedAssetTransactions/DeleteFixedAsset" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="KindBinding1" type="tns:IKindTransactions">
+    <wsp:PolicyReference URI="#KindBinding1_policy">
+    </wsp:PolicyReference>
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="AddKind">
+      <soap12:operation soapAction="http://tempuri.org/IKindTransactions/AddKind" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditKind">
+      <soap12:operation soapAction="http://tempuri.org/IKindTransactions/EditKind" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteKind">
+      <soap12:operation soapAction="http://tempuri.org/IKindTransactions/DeleteKind" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="LicenceBinding1" type="tns:ILicenceTransactions">
+    <wsp:PolicyReference URI="#LicenceBinding1_policy">
+    </wsp:PolicyReference>
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="AddLicence">
+      <soap12:operation soapAction="http://tempuri.org/ILicenceTransactions/AddLicence" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditLicence">
+      <soap12:operation soapAction="http://tempuri.org/ILicenceTransactions/EditLicence" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteLicence">
+      <soap12:operation soapAction="http://tempuri.org/ILicenceTransactions/DeleteLicence" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MembershipRoleBinding1" type="tns:IMembershipRoleTransactions">
+    <wsp:PolicyReference URI="#MembershipRoleBinding1_policy">
+    </wsp:PolicyReference>
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="AddMembershipRole">
+      <soap12:operation soapAction="http://tempuri.org/IMembershipRoleTransactions/AddMembershipRole" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditMembershipRole">
+      <soap12:operation soapAction="http://tempuri.org/IMembershipRoleTransactions/EditMembershipRole" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMembershipRole">
+      <soap12:operation soapAction="http://tempuri.org/IMembershipRoleTransactions/DeleteMembershipRole" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MembershipUserBinding1" type="tns:IMembershipUserTransactions">
+    <wsp:PolicyReference URI="#MembershipUserBinding1_policy">
+    </wsp:PolicyReference>
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="AddMembershipUser">
+      <soap12:operation soapAction="http://tempuri.org/IMembershipUserTransactions/AddMembershipUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditMembershipUser">
+      <soap12:operation soapAction="http://tempuri.org/IMembershipUserTransactions/EditMembershipUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMembershipUser">
+      <soap12:operation soapAction="http://tempuri.org/IMembershipUserTransactions/DeleteMembershipUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PeripheralDeviceBinding1" type="tns:IPeripheralDeviceTransactions">
+    <wsp:PolicyReference URI="#PeripheralDeviceBinding1_policy">
+    </wsp:PolicyReference>
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="AddPeripheralDevice">
+      <soap12:operation soapAction="http://tempuri.org/IPeripheralDeviceTransactions/AddPeripheralDevice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditPeripheralDevice">
+      <soap12:operation soapAction="http://tempuri.org/IPeripheralDeviceTransactions/EditPeripheralDevice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePeripheralDevice">
+      <soap12:operation soapAction="http://tempuri.org/IPeripheralDeviceTransactions/DeletePeripheralDevice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PersonBinding1" type="tns:IPersonTransactions">
+    <wsp:PolicyReference URI="#PersonBinding1_policy">
+    </wsp:PolicyReference>
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="AddPerson">
+      <soap12:operation soapAction="http://tempuri.org/IPersonTransactions/AddPerson" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditPerson">
+      <soap12:operation soapAction="http://tempuri.org/IPersonTransactions/EditPerson" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePerson">
+      <soap12:operation soapAction="http://tempuri.org/IPersonTransactions/DeletePerson" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SectionBinding1" type="tns:ISectionTransactions">
+    <wsp:PolicyReference URI="#SectionBinding1_policy">
+    </wsp:PolicyReference>
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="AddSection">
+      <soap12:operation soapAction="http://tempuri.org/ISectionTransactions/AddSection" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditSection">
+      <soap12:operation soapAction="http://tempuri.org/ISectionTransactions/EditSection" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSection">
+      <soap12:operation soapAction="http://tempuri.org/ISectionTransactions/DeleteSection" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SubgroupBinding1" type="tns:ISubgroupTransactions">
+    <wsp:PolicyReference URI="#SubgroupBinding1_policy">
+    </wsp:PolicyReference>
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="AddSubgroup">
+      <soap12:operation soapAction="http://tempuri.org/ISubgroupTransactions/AddSubgroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditSubgroup">
+      <soap12:operation soapAction="http://tempuri.org/ISubgroupTransactions/EditSubgroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSubgroup">
+      <soap12:operation soapAction="http://tempuri.org/ISubgroupTransactions/DeleteSubgroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FixedAssetService">
+    <wsdl:port name="ContractorBinding" binding="tns:ContractorBinding">
+      <soap12:address location="net.tcp://10.203.192.165:8080/FixedAssetsService" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://10.203.192.165:8080/FixedAssetsService</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="DeviceBinding" binding="tns:DeviceBinding">
+      <soap12:address location="net.tcp://10.203.192.165:8080/FixedAssetsService" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://10.203.192.165:8080/FixedAssetsService</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="FixedAssetBinding" binding="tns:FixedAssetBinding">
+      <soap12:address location="net.tcp://10.203.192.165:8080/FixedAssetsService" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://10.203.192.165:8080/FixedAssetsService</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="KindBinding" binding="tns:KindBinding">
+      <soap12:address location="net.tcp://10.203.192.165:8080/FixedAssetsService" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://10.203.192.165:8080/FixedAssetsService</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="LicenceBinding" binding="tns:LicenceBinding">
+      <soap12:address location="net.tcp://10.203.192.165:8080/FixedAssetsService" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://10.203.192.165:8080/FixedAssetsService</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="MembershipRoleBinding" binding="tns:MembershipRoleBinding">
+      <soap12:address location="net.tcp://10.203.192.165:8080/FixedAssetsService" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://10.203.192.165:8080/FixedAssetsService</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="MembershipUserBinding" binding="tns:MembershipUserBinding">
+      <soap12:address location="net.tcp://10.203.192.165:8080/FixedAssetsService" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://10.203.192.165:8080/FixedAssetsService</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="PeripheralDeviceBinding" binding="tns:PeripheralDeviceBinding">
+      <soap12:address location="net.tcp://10.203.192.165:8080/FixedAssetsService" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://10.203.192.165:8080/FixedAssetsService</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="PersonBinding" binding="tns:PersonBinding">
+      <soap12:address location="net.tcp://10.203.192.165:8080/FixedAssetsService" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://10.203.192.165:8080/FixedAssetsService</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="SectionBinding" binding="tns:SectionBinding">
+      <soap12:address location="net.tcp://10.203.192.165:8080/FixedAssetsService" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://10.203.192.165:8080/FixedAssetsService</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="SubgroupBinding" binding="tns:SubgroupBinding">
+      <soap12:address location="net.tcp://10.203.192.165:8080/FixedAssetsService" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://10.203.192.165:8080/FixedAssetsService</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="ContractorBinding1" binding="tns:ContractorBinding1">
+      <soap12:address location="net.tcp://10.203.192.165:8080/FixedAssetsService" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://10.203.192.165:8080/FixedAssetsService</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="DeviceBinding1" binding="tns:DeviceBinding1">
+      <soap12:address location="net.tcp://10.203.192.165:8080/FixedAssetsService" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://10.203.192.165:8080/FixedAssetsService</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="FixedAssetBinding1" binding="tns:FixedAssetBinding1">
+      <soap12:address location="net.tcp://10.203.192.165:8080/FixedAssetsService" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://10.203.192.165:8080/FixedAssetsService</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="KindBinding1" binding="tns:KindBinding1">
+      <soap12:address location="net.tcp://10.203.192.165:8080/FixedAssetsService" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://10.203.192.165:8080/FixedAssetsService</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="LicenceBinding1" binding="tns:LicenceBinding1">
+      <soap12:address location="net.tcp://10.203.192.165:8080/FixedAssetsService" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://10.203.192.165:8080/FixedAssetsService</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="MembershipRoleBinding1" binding="tns:MembershipRoleBinding1">
+      <soap12:address location="net.tcp://10.203.192.165:8080/FixedAssetsService" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://10.203.192.165:8080/FixedAssetsService</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="MembershipUserBinding1" binding="tns:MembershipUserBinding1">
+      <soap12:address location="net.tcp://10.203.192.165:8080/FixedAssetsService" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://10.203.192.165:8080/FixedAssetsService</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="PeripheralDeviceBinding1" binding="tns:PeripheralDeviceBinding1">
+      <soap12:address location="net.tcp://10.203.192.165:8080/FixedAssetsService" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://10.203.192.165:8080/FixedAssetsService</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="PersonBinding1" binding="tns:PersonBinding1">
+      <soap12:address location="net.tcp://10.203.192.165:8080/FixedAssetsService" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://10.203.192.165:8080/FixedAssetsService</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="SectionBinding1" binding="tns:SectionBinding1">
+      <soap12:address location="net.tcp://10.203.192.165:8080/FixedAssetsService" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://10.203.192.165:8080/FixedAssetsService</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="SubgroupBinding1" binding="tns:SubgroupBinding1">
+      <soap12:address location="net.tcp://10.203.192.165:8080/FixedAssetsService" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://10.203.192.165:8080/FixedAssetsService</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,48 @@
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\TransactionsTests\bin\Debug\TransactionsTests.dll
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\TransactionsTests\bin\Debug\TransactionsTests.pdb
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\TransactionsTests\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\TransactionsTests\obj\Debug\TransactionsTests.dll
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\TransactionsTests\obj\Debug\TransactionsTests.pdb
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\TransactionsTests\bin\Debug\FixedAssets.dll
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\TransactionsTests\bin\Debug\ZMTFixedAssetsService.dll
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\TransactionsTests\bin\Debug\Ninject.dll
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\TransactionsTests\bin\Debug\EF_ZMTdbEntities.dll
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\TransactionsTests\bin\Debug\FixedAssetsTransactions.dll
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\TransactionsTests\bin\Debug\ZMTFixedAssets.dll
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\TransactionsTests\bin\Debug\EF_ZMT_DbContext.dll
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\TransactionsTests\bin\Debug\EF_ZMTdbContent.dll
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\TransactionsTests\bin\Debug\ZMTFixedAssetsService.pdb
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\TransactionsTests\bin\Debug\FixedAssets.pdb
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\TransactionsTests\bin\Debug\Ninject.pdb
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\TransactionsTests\bin\Debug\Ninject.xml
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\TransactionsTests\bin\Debug\EF_ZMTdbEntities.pdb
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\TransactionsTests\bin\Debug\FixedAssetsTransactions.pdb
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\TransactionsTests\bin\Debug\ZMTFixedAssets.pdb
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\TransactionsTests\bin\Debug\EF_ZMT_DbContext.pdb
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\TransactionsTests\bin\Debug\EF_ZMTdbContent.pdb
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\ZMTFixedAssetsService\TransactionsTests\bin\Debug\EF_ZMTdbConnection.dll
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\ZMTFixedAssetsService\TransactionsTests\bin\Debug\EF_ZMTdbConnection.pdb
+E:\Fixed-Assets-System\ZMTFixedAssetsService\TransactionsTests\bin\Debug\TransactionsTests.dll
+E:\Fixed-Assets-System\ZMTFixedAssetsService\TransactionsTests\bin\Debug\TransactionsTests.pdb
+E:\Fixed-Assets-System\ZMTFixedAssetsService\TransactionsTests\bin\Debug\EF_ZMTdbConnection.dll
+E:\Fixed-Assets-System\ZMTFixedAssetsService\TransactionsTests\bin\Debug\EF_ZMTdbContent.dll
+E:\Fixed-Assets-System\ZMTFixedAssetsService\TransactionsTests\bin\Debug\EF_ZMTdbEntities.dll
+E:\Fixed-Assets-System\ZMTFixedAssetsService\TransactionsTests\bin\Debug\EF_ZMT_DbContext.dll
+E:\Fixed-Assets-System\ZMTFixedAssetsService\TransactionsTests\bin\Debug\FixedAssets.dll
+E:\Fixed-Assets-System\ZMTFixedAssetsService\TransactionsTests\bin\Debug\FixedAssetsTransactions.dll
+E:\Fixed-Assets-System\ZMTFixedAssetsService\TransactionsTests\bin\Debug\ZMTFixedAssetsService.dll
+E:\Fixed-Assets-System\ZMTFixedAssetsService\TransactionsTests\bin\Debug\Ninject.dll
+E:\Fixed-Assets-System\ZMTFixedAssetsService\TransactionsTests\bin\Debug\ZMTFixedAssets.dll
+E:\Fixed-Assets-System\ZMTFixedAssetsService\TransactionsTests\bin\Debug\ZMTFixedAssetsService.pdb
+E:\Fixed-Assets-System\ZMTFixedAssetsService\TransactionsTests\bin\Debug\EF_ZMTdbConnection.pdb
+E:\Fixed-Assets-System\ZMTFixedAssetsService\TransactionsTests\bin\Debug\EF_ZMTdbContent.pdb
+E:\Fixed-Assets-System\ZMTFixedAssetsService\TransactionsTests\bin\Debug\EF_ZMTdbEntities.pdb
+E:\Fixed-Assets-System\ZMTFixedAssetsService\TransactionsTests\bin\Debug\EF_ZMT_DbContext.pdb
+E:\Fixed-Assets-System\ZMTFixedAssetsService\TransactionsTests\bin\Debug\FixedAssets.pdb
+E:\Fixed-Assets-System\ZMTFixedAssetsService\TransactionsTests\bin\Debug\FixedAssetsTransactions.pdb
+E:\Fixed-Assets-System\ZMTFixedAssetsService\TransactionsTests\bin\Debug\Ninject.pdb
+E:\Fixed-Assets-System\ZMTFixedAssetsService\TransactionsTests\bin\Debug\Ninject.xml
+E:\Fixed-Assets-System\ZMTFixedAssetsService\TransactionsTests\bin\Debug\ZMTFixedAssets.pdb
+E:\Fixed-Assets-System\ZMTFixedAssetsService\TransactionsTests\obj\Debug\ResolveAssemblyReference.cache
+E:\Fixed-Assets-System\ZMTFixedAssetsService\TransactionsTests\obj\Debug\TransactionsTests.dll
+E:\Fixed-Assets-System\ZMTFixedAssetsService\TransactionsTests\obj\Debug\TransactionsTests.pdb

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{69447191-167B-48EC-AFD9-F7193440F174}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZMTFixedAssets</RootNamespace>
+    <AssemblyName>ZMTFixedAssets</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EF_ZMTdbContent, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\EF_ZMTdbConnection\EF_ZMTdbContent\bin\Debug\EF_ZMTdbContent.dll</HintPath>
+    </Reference>
+    <Reference Include="EF_ZMTdbEntities">
+      <HintPath>..\..\FixedAssets\FixedAssets\bin\Debug\EF_ZMTdbEntities.dll</HintPath>
+    </Reference>
+    <Reference Include="FixedAssets, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\FixedAssets\FixedAssets\bin\Debug\FixedAssets.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\Contractor\ZMT_ContractorRepository.cs" />
+    <Compile Include="Repositories\Device\ZMT_DeviceRepository.cs" />
+    <Compile Include="Repositories\FixedAsset\ZMT_FixedAssetRepository.cs" />
+    <Compile Include="Repositories\Kind\ZMT_KindRepository.cs" />
+    <Compile Include="Repositories\Licence\ZMT_LicenceRepository.cs" />
+    <Compile Include="Repositories\Membership\ZMT_MembershipUserRepository.cs" />
+    <Compile Include="Repositories\Membership\ZMT_MembershipRoleRepository.cs" />
+    <Compile Include="Repositories\PeripheralDevice\ZMT_PeripheralDeviceRepository.cs" />
+    <Compile Include="Repositories\Person\ZMT_PersonRepository.cs" />
+    <Compile Include="Repositories\Section\ZMT_SectionRepository.cs" />
+    <Compile Include="Repositories\Subgroup\ZMT_SubgroupRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EF_ZMTdbEntities\EF_ZMT_DbContext.csproj">
+      <Project>{94AB6BB3-DA9A-4BAF-8C66-688981F37BFD}</Project>
+      <Name>EF_ZMT_DbContext</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

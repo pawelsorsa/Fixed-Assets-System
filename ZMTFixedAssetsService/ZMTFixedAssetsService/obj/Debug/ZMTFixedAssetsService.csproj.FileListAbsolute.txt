@@ -1,0 +1,44 @@
+c:\users\admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\ZMTFixedAssetsService\bin\Debug\ZMTFixedAssetsService.dll
+c:\users\admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\ZMTFixedAssetsService\bin\Debug\ZMTFixedAssetsService.pdb
+c:\users\admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\ZMTFixedAssetsService\bin\Debug\EF_ZMTdbEntities.dll
+c:\users\admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\ZMTFixedAssetsService\bin\Debug\FixedAssets.dll
+c:\users\admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\ZMTFixedAssetsService\bin\Debug\EF_ZMTdbEntities.pdb
+c:\users\admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\ZMTFixedAssetsService\bin\Debug\FixedAssets.pdb
+c:\users\admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\ZMTFixedAssetsService\obj\Debug\ResolveAssemblyReference.cache
+c:\users\admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\ZMTFixedAssetsService\obj\Debug\ZMTFixedAssetsService.dll
+c:\users\admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\ZMTFixedAssetsService\obj\Debug\ZMTFixedAssetsService.pdb
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\ZMTFixedAssetsService\bin\Debug\Ninject.dll
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\ZMTFixedAssetsService\bin\Debug\ZMTFixedAssets.dll
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\ZMTFixedAssetsService\bin\Debug\EF_ZMTdbContent.dll
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\ZMTFixedAssetsService\bin\Debug\Ninject.pdb
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\ZMTFixedAssetsService\bin\Debug\Ninject.xml
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\ZMTFixedAssetsService\bin\Debug\ZMTFixedAssets.pdb
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\ZMTFixedAssetsService\bin\Debug\EF_ZMTdbContent.pdb
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\ZMTFixedAssetsService\ZMTFixedAssetsService\bin\Debug\EF_ZMT_DbContext.dll
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\ZMTFixedAssetsService\ZMTFixedAssetsService\bin\Debug\EF_ZMT_DbContext.pdb
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\ZMTFixedAssetsService\bin\Debug\FixedAssetsTransactions.dll
+C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssetsService\ZMTFixedAssetsService\bin\Debug\FixedAssetsTransactions.pdb
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\ZMTFixedAssetsService\ZMTFixedAssetsService\bin\Debug\EF_ZMTdbConnection.dll
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\ZMTFixedAssetsService\ZMTFixedAssetsService\bin\Debug\EF_ZMTdbConnection.pdb
+E:\Fixed-Assets-System\ZMTFixedAssetsService\ZMTFixedAssetsService\bin\Debug\ZMTFixedAssetsService.dll
+E:\Fixed-Assets-System\ZMTFixedAssetsService\ZMTFixedAssetsService\bin\Debug\ZMTFixedAssetsService.pdb
+E:\Fixed-Assets-System\ZMTFixedAssetsService\ZMTFixedAssetsService\bin\Debug\EF_ZMTdbConnection.dll
+E:\Fixed-Assets-System\ZMTFixedAssetsService\ZMTFixedAssetsService\bin\Debug\EF_ZMTdbContent.dll
+E:\Fixed-Assets-System\ZMTFixedAssetsService\ZMTFixedAssetsService\bin\Debug\EF_ZMTdbEntities.dll
+E:\Fixed-Assets-System\ZMTFixedAssetsService\ZMTFixedAssetsService\bin\Debug\EF_ZMT_DbContext.dll
+E:\Fixed-Assets-System\ZMTFixedAssetsService\ZMTFixedAssetsService\bin\Debug\FixedAssets.dll
+E:\Fixed-Assets-System\ZMTFixedAssetsService\ZMTFixedAssetsService\bin\Debug\FixedAssetsTransactions.dll
+E:\Fixed-Assets-System\ZMTFixedAssetsService\ZMTFixedAssetsService\bin\Debug\Ninject.dll
+E:\Fixed-Assets-System\ZMTFixedAssetsService\ZMTFixedAssetsService\bin\Debug\ZMTFixedAssets.dll
+E:\Fixed-Assets-System\ZMTFixedAssetsService\ZMTFixedAssetsService\bin\Debug\EF_ZMTdbConnection.pdb
+E:\Fixed-Assets-System\ZMTFixedAssetsService\ZMTFixedAssetsService\bin\Debug\EF_ZMTdbContent.pdb
+E:\Fixed-Assets-System\ZMTFixedAssetsService\ZMTFixedAssetsService\bin\Debug\EF_ZMTdbEntities.pdb
+E:\Fixed-Assets-System\ZMTFixedAssetsService\ZMTFixedAssetsService\bin\Debug\EF_ZMT_DbContext.pdb
+E:\Fixed-Assets-System\ZMTFixedAssetsService\ZMTFixedAssetsService\bin\Debug\FixedAssets.pdb
+E:\Fixed-Assets-System\ZMTFixedAssetsService\ZMTFixedAssetsService\bin\Debug\FixedAssetsTransactions.pdb
+E:\Fixed-Assets-System\ZMTFixedAssetsService\ZMTFixedAssetsService\bin\Debug\Ninject.pdb
+E:\Fixed-Assets-System\ZMTFixedAssetsService\ZMTFixedAssetsService\bin\Debug\Ninject.xml
+E:\Fixed-Assets-System\ZMTFixedAssetsService\ZMTFixedAssetsService\bin\Debug\ZMTFixedAssets.pdb
+E:\Fixed-Assets-System\ZMTFixedAssetsService\ZMTFixedAssetsService\obj\Debug\ResolveAssemblyReference.cache
+E:\Fixed-Assets-System\ZMTFixedAssetsService\ZMTFixedAssetsService\obj\Debug\ZMTFixedAssetsService.dll
+E:\Fixed-Assets-System\ZMTFixedAssetsService\ZMTFixedAssetsService\obj\Debug\ZMTFixedAssetsService.pdb

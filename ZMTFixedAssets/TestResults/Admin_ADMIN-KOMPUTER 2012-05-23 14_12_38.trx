@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="5e8f358f-c0a8-4c29-a916-a00790aaa5e6" name="Admin@ADMIN-KOMPUTER 2012-05-23 14:12:38" runUser="Admin-Komputer\Admin" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="1dc8fbb8-15f3-49ac-a2c5-a77e39de2a4f">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Admin_ADMIN-KOMPUTER 2012-05-23 14_12_38">
+      <DeploymentItem filename="C:\Users\Admin\documents\visual studio 2010\Projects\EF_ZMTdbConnection\EF_ZMTdbContent\bin\Debug\EF_ZMTdbContent.dll" />
+      <DeploymentItem filename="D:\c#\Moq.dll" />
+      <DeploymentItem filename="C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssets\ZMTFixedAssets\bin\Debug\FixedAssets.dll" />
+      <DeploymentItem filename="C:\Users\Admin\documents\visual studio 2010\Projects\ZMTFixedAssets\ZMTFixedAssets\bin\Debug\ZMTFixedAssets.dll" />
+      <DeploymentItem filename="C:\Users\Admin\documents\visual studio 2010\Projects\EF_ZMTdbConnection\EF_ZMTdbEntities\bin\Debug\EF_ZMTdbEntities.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-05-23T14:12:38.5852204+02:00" queuing="2012-05-23T14:12:38.7256207+02:00" start="2012-05-23T14:12:38.7568207+02:00" finish="2012-05-23T14:12:40.0672230+02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="GetLicencesByLastModifiedPersonId" storage="c:\users\admin\documents\visual studio 2010\projects\zmtfixedassets\zmtfixedassetstestproject\bin\debug\zmtfixedassetstestproject.dll" id="5abd3f1e-e034-b46c-e0cb-376b9387ab3f">
+      <Execution id="badcce88-4bea-4178-828e-a254fcc1806e" />
+      <TestMethod codeBase="C:/Users/Admin/documents/visual studio 2010/Projects/ZMTFixedAssets/ZMTFixedAssetsTestProject/bin/Debug/ZMTFixedAssetsTestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ZMTFixedAssetsTestProject.LicenceTest, ZMTFixedAssetsTestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetLicencesByLastModifiedPersonId" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="5abd3f1e-e034-b46c-e0cb-376b9387ab3f" executionId="badcce88-4bea-4178-828e-a254fcc1806e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="badcce88-4bea-4178-828e-a254fcc1806e" testId="5abd3f1e-e034-b46c-e0cb-376b9387ab3f" testName="GetLicencesByLastModifiedPersonId" computerName="ADMIN-KOMPUTER" duration="00:00:00.5374097" startTime="2012-05-23T14:12:38.8036208+02:00" endTime="2012-05-23T14:12:40.0204230+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="badcce88-4bea-4178-828e-a254fcc1806e">
+    </UnitTestResult>
+  </Results>
+</TestRun>

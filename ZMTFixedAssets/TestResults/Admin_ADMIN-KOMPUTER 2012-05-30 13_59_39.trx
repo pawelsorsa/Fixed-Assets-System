@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="3aed8ce1-32d5-4d06-b654-e4fc3ded0d69" name="Admin@ADMIN-KOMPUTER 2012-05-30 13:59:39" runUser="Admin-Komputer\Admin" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="1dc8fbb8-15f3-49ac-a2c5-a77e39de2a4f">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Admin_ADMIN-KOMPUTER 2012-05-30 13_59_39">
+      <DeploymentItem filename="C:\Users\Admin\Documents\Visual Studio 2010\Projects\ZMTFixedAssets\ZMTFixedAssets\bin\Debug\FixedAssets.dll" />
+      <DeploymentItem filename="C:\Users\Admin\Documents\Visual Studio 2010\Projects\ZMTFixedAssets\ZMTFixedAssets\bin\Debug\ZMTFixedAssets.dll" />
+      <DeploymentItem filename="C:\Users\Admin\Documents\Visual Studio 2010\Projects\EF_ZMTdbConnection\EF_ZMTdbContent\bin\Debug\EF_ZMTdbContent.dll" />
+      <DeploymentItem filename="C:\Users\Admin\Documents\Visual Studio 2010\Projects\EF_ZMTdbConnection\EF_ZMTdbEntities\bin\Debug\EF_ZMTdbEntities.dll" />
+      <DeploymentItem filename="D:\c#\Moq.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-05-30T13:59:39.6857070+02:00" queuing="2012-05-30T13:59:39.8287152+02:00" start="2012-05-30T13:59:39.8817182+02:00" finish="2012-05-30T13:59:40.8457734+02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="GetAllKindsAndCount" storage="c:\users\admin\documents\visual studio 2010\projects\zmtfixedassets\zmtfixedassetstestproject\bin\debug\zmtfixedassetstestproject.dll" id="48f43119-43f5-4aea-656f-4f47fef401b2">
+      <Execution id="a6aa8489-af58-4fc0-9154-0789515b222c" />
+      <TestMethod codeBase="C:/Users/Admin/Documents/Visual Studio 2010/Projects/ZMTFixedAssets/ZMTFixedAssetsTestProject/bin/Debug/ZMTFixedAssetsTestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ZMTFixedAssetsTestProject.MembershipUserTest, ZMTFixedAssetsTestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetAllKindsAndCount" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="48f43119-43f5-4aea-656f-4f47fef401b2" executionId="a6aa8489-af58-4fc0-9154-0789515b222c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="a6aa8489-af58-4fc0-9154-0789515b222c" testId="48f43119-43f5-4aea-656f-4f47fef401b2" testName="GetAllKindsAndCount" computerName="ADMIN-KOMPUTER" duration="00:00:00.4817905" startTime="2012-05-30T13:59:39.9007193+02:00" endTime="2012-05-30T13:59:40.8087712+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a6aa8489-af58-4fc0-9154-0789515b222c">
+    </UnitTestResult>
+  </Results>
+</TestRun>

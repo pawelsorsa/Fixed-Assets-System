@@ -1,0 +1,192 @@
+c:\users\admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\bin\Debug\FixedAssetsApp.exe
+c:\users\admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\bin\Debug\FixedAssetsApp.pdb
+c:\users\admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\MainWindow.baml
+c:\users\admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\MainWindow.g.cs
+c:\users\admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\App.g.cs
+c:\users\admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\FixedAssetsApp_MarkupCompile.cache
+c:\users\admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\FixedAssetsApp.g.resources
+c:\users\admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\FixedAssetsApp.Properties.Resources.resources
+c:\users\admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\FixedAssetsApp.exe
+c:\users\admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\FixedAssetsApp.pdb
+c:\users\admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\UserControlls\Menu.baml
+c:\users\admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\UserControlls\Menu.g.cs
+c:\users\admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\FixedAssetsApp_MarkupCompile.lref
+c:\users\admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+c:\users\admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\bin\Debug\FixedAssetsApp.exe.config
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\ApplicationView.baml
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\ApplicationView.g.cs
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\SectionView.baml
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\SectionView.g.cs
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\PersonView.baml
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\PersonView.g.cs
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\UserControlls\ExpandersPerson.g.cs
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\UserControlls\ExpandersPerson.baml
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\PersonEditView.baml
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\PersonEditView.g.cs
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\SectionEditView.g.cs
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\SectionEditView.baml
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\DeviceView.baml
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\DeviceView.g.cs
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\DeviceEditView.baml
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\DeviceEditView.g.cs
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\PeripheralDeviceView.baml
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\PeripheralDeviceView.g.cs
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\PeripheralDeviceEditView.g.cs
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\PeripheralDeviceEditView.baml
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\SubgroupView.baml
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\SubgroupView.g.cs
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\SubgroupEditView.baml
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\SubgroupEditView.g.cs
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\KindEditView.baml
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\KindView.baml
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\KindEditView.g.cs
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\KindView.g.cs
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\LicenceView.baml
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\LicenceView.g.cs
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\LicenceEditView.baml
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\LicenceEditView.g.cs
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\FixedAssetView.baml
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\FixedAssetView.g.cs
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\FixedAssetEditView.baml
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\FixedAssetEditView.g.cs
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\FixedAssetCardView.baml
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\FixedAssetCardView.g.cs
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\AuthenticationView.baml
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\AuthenticationView.g.cs
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\LoginInfoView.baml
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\LoginInfoView.g.cs
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\UserView.baml
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\UserView.g.cs
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\UserEditView.g.cs
+C:\Users\Admin\documents\visual studio 2010\Projects\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\UserEditView.baml
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\bin\Debug\FixedAssetsApp.exe.config
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\FixedAssetsApp.exe
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\FixedAssetsApp.pdb
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\bin\Debug\FixedAssetsApp.exe
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\bin\Debug\FixedAssetsApp.pdb
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\UserControlls\Menu.baml
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\ApplicationView.baml
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\AuthenticationView.baml
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\DeviceView.baml
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\FixedAssetCardView.baml
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\KindView.baml
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\LicenceView.baml
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\LoginInfoView.baml
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\PeripheralDeviceView.baml
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\SectionView.baml
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\SubgroupView.baml
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\UserView.baml
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\UserControlls\ExpandersPerson.g.cs
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\UserControlls\Menu.g.cs
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\ApplicationView.g.cs
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\AuthenticationView.g.cs
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\DeviceEditView.g.cs
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\DeviceView.g.cs
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\FixedAssetCardView.g.cs
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\FixedAssetEditView.g.cs
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\FixedAssetView.g.cs
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\KindEditView.g.cs
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\KindView.g.cs
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\LicenceEditView.g.cs
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\LicenceView.g.cs
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\LoginInfoView.g.cs
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\PeripheralDeviceEditView.g.cs
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\PeripheralDeviceView.g.cs
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\PersonEditView.g.cs
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\PersonView.g.cs
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\SectionEditView.g.cs
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\SectionView.g.cs
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\SubgroupEditView.g.cs
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\SubgroupView.g.cs
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\UserEditView.g.cs
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\UserView.g.cs
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\App.g.cs
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\FixedAssetsApp_MarkupCompile.cache
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\FixedAssetsApp_MarkupCompile.lref
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\MainWindow.baml
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\UserControlls\ExpandersPerson.baml
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\DeviceEditView.baml
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\FixedAssetEditView.baml
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\FixedAssetView.baml
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\KindEditView.baml
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\LicenceEditView.baml
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\PeripheralDeviceEditView.baml
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\PersonEditView.baml
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\PersonView.baml
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\SectionEditView.baml
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\SubgroupEditView.baml
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\UserEditView.baml
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\FixedAssetsApp.g.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\FixedAssetsApp.Properties.Resources.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\FixedAssetsSystem\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\bin\Debug\FixedAssetsApp.exe.config
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\FixedAssetsApp.exe
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\FixedAssetsApp.pdb
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\bin\Debug\FixedAssetsApp.exe
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\bin\Debug\FixedAssetsApp.pdb
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\UserControlls\Menu.baml
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\ApplicationView.baml
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\AuthenticationView.baml
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\DeviceView.baml
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\FixedAssetCardView.baml
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\KindView.baml
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\LicenceView.baml
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\LoginInfoView.baml
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\PeripheralDeviceView.baml
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\SectionView.baml
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\SubgroupView.baml
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\UserView.baml
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\MainWindow.g.cs
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\UserControlls\ExpandersPerson.g.cs
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\UserControlls\Menu.g.cs
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\ApplicationView.g.cs
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\AuthenticationView.g.cs
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\DeviceEditView.g.cs
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\DeviceView.g.cs
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\FixedAssetCardView.g.cs
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\FixedAssetEditView.g.cs
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\FixedAssetView.g.cs
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\KindEditView.g.cs
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\KindView.g.cs
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\LicenceEditView.g.cs
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\LicenceView.g.cs
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\LoginInfoView.g.cs
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\PeripheralDeviceEditView.g.cs
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\PeripheralDeviceView.g.cs
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\PersonEditView.g.cs
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\PersonView.g.cs
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\SectionEditView.g.cs
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\SectionView.g.cs
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\SubgroupEditView.g.cs
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\SubgroupView.g.cs
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\UserEditView.g.cs
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\UserView.g.cs
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\App.g.cs
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\FixedAssetsApp_MarkupCompile.cache
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\FixedAssetsApp_MarkupCompile.lref
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\MainWindow.baml
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\UserControlls\ExpandersPerson.baml
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\DeviceEditView.baml
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\FixedAssetEditView.baml
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\FixedAssetView.baml
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\KindEditView.baml
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\LicenceEditView.baml
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\PeripheralDeviceEditView.baml
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\PersonEditView.baml
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\PersonView.baml
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\SectionEditView.baml
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\SubgroupEditView.baml
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\Views\UserEditView.baml
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\FixedAssetsApp.g.resources
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\FixedAssetsApp.Properties.Resources.resources
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\Fixed-Assets-System\FixedAssetsApp\FixedAssetsApp\obj\x86\Debug\GenerateResource.write.1.tlog
