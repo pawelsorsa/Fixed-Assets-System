@@ -1,10 +1,10 @@
-It’s an application applied to manage the fixed assets system.
+Itï¿½s an application applied to manage the fixed assets system.
 
-Main use of the application:
+The main use of the application:
 The main use of the application is managing the local database. The database includes data about the employees and the fixed assets. The application is currently used in my current company.
 
 The project has been divide into two modules:
-The first one is a host application. It’s a WCF application hosted by a console application.
+The first one is a host application. Itï¿½s a WCF application hosted by a console application.
 About the module:
 - used frameworks, tools: WCF entity framework.
 
