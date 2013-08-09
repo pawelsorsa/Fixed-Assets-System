@@ -1,5 +1,4 @@
-It's an application applied to manage the fixed assets system.
-
+It's an application applied to managing a fixed assets register
 
 The main use of the application is managing the local database. The database includes data about the employees and the fixed assets. The application is currently used in my current company.
 
